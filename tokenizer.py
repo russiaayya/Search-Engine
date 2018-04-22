@@ -18,7 +18,10 @@ def generateTokens(dir):
     #print(filelist)
     validTokens = []
     punctuation = string.punctuation.replace("-", "")  # retaining hyphen- question
-    count = 0
+    s=string.punctuation
+    print(s)
+    nums_punctuation="!\"#$%&'()*+/;<=>?@[\]^_`{|}~"
+
     for f in filelist:
         if len(f) <= 1:
             continue
@@ -30,6 +33,9 @@ def generateTokens(dir):
         contents = str(raw).split()
         for t in contents:
             if numsOnly(t):
+                for digit in t:
+                    if digit in nums_punctuation:
+                        t=t.replace(digit,"")
                 validTokens.append(t.strip(string.punctuation))
                 continue
             t = t.lower()
