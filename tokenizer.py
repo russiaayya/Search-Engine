@@ -1,11 +1,6 @@
 import os
 import string
-from urllib.request import urlopen
 import bs4 as bsnew
-from nltk import word_tokenize
-from string import punctuation
-
-
 
 def numsOnly(inputString):# function to make sure it contains only the digits and punctuations and no alphabets
     if any(c.isalpha() for c in inputString):
@@ -15,7 +10,6 @@ def numsOnly(inputString):# function to make sure it contains only the digits an
 
 def generateTokens(dir):
     filelist = os.listdir(os.path.abspath(dir))
-    #print(filelist)
     validTokens = []
     punctuation = string.punctuation.replace("-", "")  # retaining hyphen- question
     nums_punctuation="!\"#$%&'()*+/;<=>?@[\]^_`{|}~"   # removing . , - : for digits
