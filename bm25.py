@@ -23,8 +23,6 @@ def generateranking():
     averageDl=totalCount/3204
     flag=0
     for qid,q in queries.items():
-            print(qid)
-            print(q)
             qfi={}
             for word in q:
                 if word not in qfi:
@@ -32,16 +30,13 @@ def generateranking():
                 else:
                     qfi[word]+=1
             for word in q:
-                print("query word is",word)
                 if word in unigrams.keys():
                     ni = len(unigrams[word])
-                    print(ni)
                     for docID in unigrams[word]:
                         fi=unigrams[word][docID]
                         dl=documentLen[docID]
                         K=k1*((1-b)+b*(float(dl)/averageDl))#taking full decimal values
                         score=math.log(((r+0.5)/(R-r+0.5))/((ni-r+0.5)/(N-ni-R+r+0.5)))*(((k1+1)*fi)/(K+fi))*(((k2+1)*qfi[word])/(k2+qfi[word]))
-                        print("score is",score)
                         if docID not in docScore:
                             docScore[docID]=score
                         else:
@@ -51,8 +46,6 @@ def generateranking():
                 filename = "bm25_Ranking" + ".txt"
                 newFile = open(filename, 'w', encoding='utf-8')
                 flag=1
-            newFile.write("The query is ::\n")
-            newFile.write(str(q))
             newFile.write("\n")
             newFile.write("query_id   Q0   doc_id   rank   BM_25   system_name\n")
             for index,token in enumerate(revSortedDocScore):

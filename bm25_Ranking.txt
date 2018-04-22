@@ -1,5 +1,4 @@
-The query is ::
-['what', 'articles', 'exist', 'which', 'deal', 'with', 'tss', 'time', 'sharing', 'system', 'an', 'operating', 'system', 'for', 'ibm', 'computers']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  1    Q0   CACM-1519 1   24.673254507764995   BM_25   
  1    Q0   CACM-1605 2   23.11407748970749   BM_25   
@@ -101,8 +100,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  1    Q0   CACM-2344 98   14.33375894221107   BM_25   
  1    Q0   CACM-1533 99   14.317278698447176   BM_25   
  1    Q0   CACM-1225 100   14.289239689448145   BM_25   
-The query is ::
-['i', 'am', 'interested', 'in', 'articles', 'written', 'either', 'by', 'prieve', 'or', 'udo', 'pooch', 'prieve', 'b', 'pooch', 'u']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  2    Q0   CACM-3078 1   34.673239779563104   BM_25   
  2    Q0   CACM-2434 2   27.577240388148137   BM_25   
@@ -204,8 +202,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  2    Q0   CACM-1315 98   5.734318619684794   BM_25   
  2    Q0   CACM-1564 99   5.732747254507365   BM_25   
  2    Q0   CACM-1183 100   5.721197145376276   BM_25   
-The query is ::
-['intermediate', 'languages', 'used', 'in', 'construction', 'of', 'multi-targeted', 'compilers', 'tcoll']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  3    Q0   CACM-2112 1   7.686075897568768   BM_25   
  3    Q0   CACM-2921 2   7.571830257491023   BM_25   
@@ -307,8 +304,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  3    Q0   CACM-1565 98   3.4838596216803683   BM_25   
  3    Q0   CACM-1678 99   3.4832505830173517   BM_25   
  3    Q0   CACM-2305 100   3.4724018403172687   BM_25   
-The query is ::
-['im', 'interested', 'in', 'mechanisms', 'for', 'communicating', 'between', 'disjoint', 'processes', 'possibly', 'but', 'not', 'exclusively', 'in', 'a', 'distributed', 'environment', 'i', 'would', 'rather', 'see', 'descriptions', 'of', 'complete', 'mechanisms', 'with', 'or', 'without', 'implementations', 'as', 'opposed', 'to', 'theoretical', 'work', 'on', 'the', 'abstract', 'problem', 'remote', 'procedure', 'calls', 'and', 'message-passing', 'are', 'examples', 'of', 'my', 'interests']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  4    Q0   CACM-2939 1   29.96366128630171   BM_25   
  4    Q0   CACM-2377 2   28.39166515278493   BM_25   
@@ -410,8 +406,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  4    Q0   CACM-1698 98   9.375127693893262   BM_25   
  4    Q0   CACM-2276 99   9.365755250712576   BM_25   
  4    Q0   CACM-2946 100   9.291889883982897   BM_25   
-The query is ::
-['id', 'like', 'papers', 'on', 'design', 'and', 'implementation', 'of', 'editing', 'interfaces', 'window-managers', 'command', 'interpreters', 'etc', 'the', 'essential', 'issues', 'are', 'human', 'interface', 'design', 'with', 'views', 'on', 'improvements', 'to', 'user', 'efficiency', 'effectiveness', 'and', 'satisfaction']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  5    Q0   CACM-2035 1   35.96153824269226   BM_25   
  5    Q0   CACM-1829 2   32.541099385121946   BM_25   
@@ -513,8 +508,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  5    Q0   CACM-1724 98   14.789845140978004   BM_25   
  5    Q0   CACM-1314 99   14.627352698342943   BM_25   
  5    Q0   CACM-1053 100   14.574542076907772   BM_25   
-The query is ::
-['interested', 'in', 'articles', 'on', 'robotics', 'motion', 'planning', 'particularly', 'the', 'geometric', 'and', 'combinatorial', 'aspects', 'we', 'are', 'not', 'interested', 'in', 'the', 'dynamics', 'of', 'arm', 'motion']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  6    Q0   CACM-2826 1   41.66115017309346   BM_25   
  6    Q0   CACM-1543 2   28.176516048514372   BM_25   
@@ -616,8 +610,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  6    Q0   CACM-2769 98   4.164537798624795   BM_25   
  6    Q0   CACM-3154 99   4.138921818919904   BM_25   
  6    Q0   CACM-1113 100   4.110343880489432   BM_25   
-The query is ::
-['i', 'am', 'interested', 'in', 'distributed', 'algorithms', 'concurrent', 'programs', 'in', 'which', 'processes', 'communicate', 'and', 'synchronize', 'by', 'using', 'message', 'passing', 'areas', 'of', 'particular', 'interest', 'include', 'fault-tolerance', 'and', 'techniques', 'for', 'understanding', 'the', 'correctness', 'of', 'these', 'algorithms']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  7    Q0   CACM-3043 1   37.34127509634828   BM_25   
  7    Q0   CACM-2903 2   28.810668621121042   BM_25   
@@ -719,8 +712,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  7    Q0   CACM-2320 98   12.98236132214387   BM_25   
  7    Q0   CACM-2832 99   12.884279145547925   BM_25   
  7    Q0   CACM-1658 100   12.840894426915202   BM_25   
-The query is ::
-['addressing', 'schemes', 'for', 'resources', 'in', 'networks', 'resource', 'addressing', 'in', 'network', 'operating', 'systems']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  8    Q0   CACM-2625 1   33.774030770288824   BM_25   
  8    Q0   CACM-2541 2   27.988141096157623   BM_25   
@@ -822,8 +814,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  8    Q0   CACM-3038 98   8.029933647097813   BM_25   
  8    Q0   CACM-1811 99   8.017990872155545   BM_25   
  8    Q0   CACM-2890 100   8.016308620231102   BM_25   
-The query is ::
-['security', 'considerations', 'in', 'local', 'networks', 'network', 'operating', 'systems', 'and', 'distributed', 'systems']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  9    Q0   CACM-2849 1   27.21272227518141   BM_25   
  9    Q0   CACM-2372 2   24.802346867046573   BM_25   
@@ -925,8 +916,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  9    Q0   CACM-2482 98   12.282481649937118   BM_25   
  9    Q0   CACM-2730 99   12.154839788679624   BM_25   
  9    Q0   CACM-3072 100   12.084595135013927   BM_25   
-The query is ::
-['parallel', 'languages', 'languages', 'for', 'parallel', 'computation']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  10    Q0   CACM-2785 1   37.28871627965533   BM_25   
  10    Q0   CACM-2700 2   28.35008216144971   BM_25   
@@ -1028,8 +1018,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  10    Q0   CACM-1135 98   13.332234365290367   BM_25   
  10    Q0   CACM-0689 99   13.327093144479518   BM_25   
  10    Q0   CACM-2148 100   13.29797726110491   BM_25   
-The query is ::
-['setl', 'very', 'high', 'level', 'languages']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  11    Q0   CACM-2699 1   24.189861544740783   BM_25   
  11    Q0   CACM-2906 2   16.55623196180742   BM_25   
@@ -1131,8 +1120,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  11    Q0   CACM-1182 98   3.768913232134247   BM_25   
  11    Q0   CACM-3058 99   3.7614466112573286   BM_25   
  11    Q0   CACM-0367 100   3.7575831920822513   BM_25   
-The query is ::
-['portable', 'operating', 'systems']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  12    Q0   CACM-3127 1   15.814457216112741   BM_25   
  12    Q0   CACM-2246 2   10.148990825478581   BM_25   
@@ -1234,8 +1222,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  12    Q0   CACM-2582 98   3.3098290156688224   BM_25   
  12    Q0   CACM-2812 99   3.287979303165299   BM_25   
  12    Q0   CACM-1844 100   3.278367472363678   BM_25   
-The query is ::
-['code', 'optimization', 'for', 'space', 'efficiency']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  13    Q0   CACM-1947 1   11.723444807183373   BM_25   
  13    Q0   CACM-1795 2   11.130538197752246   BM_25   
@@ -1337,8 +1324,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  13    Q0   CACM-2359 98   4.3854796694375064   BM_25   
  13    Q0   CACM-1901 99   4.383326877125626   BM_25   
  13    Q0   CACM-2195 100   4.381485432431579   BM_25   
-The query is ::
-['find', 'all', 'discussions', 'of', 'optimal', 'implementations', 'of', 'sort', 'algorithms', 'for', 'database', 'management', 'applications']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  14    Q0   CACM-3132 1   11.426392484324646   BM_25   
  14    Q0   CACM-3131 2   9.571641938603868   BM_25   
@@ -1440,8 +1426,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  14    Q0   CACM-2272 98   3.3917736129172655   BM_25   
  14    Q0   CACM-2876 99   3.387060728838983   BM_25   
  14    Q0   CACM-2266 100   3.3056340080343793   BM_25   
-The query is ::
-['find', 'all', 'discussions', 'of', 'horizontal', 'microcode', 'optimization', 'with', 'special', 'emphasis', 'on', 'optimization', 'of', 'loops', 'and', 'global', 'optimization']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  15    Q0   CACM-2464 1   61.49293060847835   BM_25   
  15    Q0   CACM-2835 2   53.74750722787077   BM_25   
@@ -1543,8 +1528,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  15    Q0   CACM-2336 98   4.773236786078131   BM_25   
  15    Q0   CACM-1760 99   4.727726388115388   BM_25   
  15    Q0   CACM-1838 100   4.705295084012674   BM_25   
-The query is ::
-['find', 'all', 'descriptions', 'of', 'file', 'handling', 'in', 'operating', 'systems', 'based', 'on', 'multiple', 'processes', 'and', 'message', 'passing']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  16    Q0   CACM-3141 1   18.27819363473895   BM_25   
  16    Q0   CACM-0243 2   17.12843932176095   BM_25   
@@ -1646,8 +1630,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  16    Q0   CACM-2407 98   7.132847557143553   BM_25   
  16    Q0   CACM-3114 99   7.119778160609606   BM_25   
  16    Q0   CACM-1534 100   7.039696825354177   BM_25   
-The query is ::
-['optimization', 'of', 'intermediate', 'and', 'machine', 'code']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  17    Q0   CACM-1658 1   11.842525329748064   BM_25   
  17    Q0   CACM-2495 2   10.528219937621017   BM_25   
@@ -1749,8 +1732,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  17    Q0   CACM-2746 98   3.3751467643724333   BM_25   
  17    Q0   CACM-0693 99   3.370046117500859   BM_25   
  17    Q0   CACM-2871 100   3.3566728503039536   BM_25   
-The query is ::
-['languages', 'and', 'compilers', 'for', 'parallel', 'processors', 'especially', 'highly', 'horizontal', 'microcoded', 'machines', 'code', 'compaction']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  18    Q0   CACM-2714 1   13.392391255605869   BM_25   
  18    Q0   CACM-2138 2   12.868762309805348   BM_25   
@@ -1852,8 +1834,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  18    Q0   CACM-2767 98   5.628590636673472   BM_25   
  18    Q0   CACM-3107 99   5.621887282585092   BM_25   
  18    Q0   CACM-2723 100   5.612215329674891   BM_25   
-The query is ::
-['parallel', 'algorithms']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  19    Q0   CACM-2973 1   10.077744824318273   BM_25   
  19    Q0   CACM-3075 2   8.691129889799372   BM_25   
@@ -1955,8 +1936,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  19    Q0   CACM-2389 98   3.523097793617827   BM_25   
  19    Q0   CACM-1171 99   3.5148389261454054   BM_25   
  19    Q0   CACM-0320 100   3.503121077864139   BM_25   
-The query is ::
-['graph', 'theoretic', 'algorithms', 'applicable', 'to', 'sparse', 'matrices']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  20    Q0   CACM-2695 1   21.05570894987895   BM_25   
  20    Q0   CACM-2769 2   14.127907371528764   BM_25   
@@ -2058,8 +2038,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  20    Q0   CACM-2015 98   5.125239482566513   BM_25   
  20    Q0   CACM-2701 99   5.113728045120347   BM_25   
  20    Q0   CACM-2763 100   5.112618735056203   BM_25   
-The query is ::
-['computational', 'complexity', 'intractability', 'class-complete', 'reductions', 'algorithms', 'and', 'efficiency']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  21    Q0   CACM-2337 1   15.211086293054052   BM_25   
  21    Q0   CACM-3086 2   14.124135145187998   BM_25   
@@ -2161,8 +2140,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  21    Q0   CACM-2767 98   4.058960408917503   BM_25   
  21    Q0   CACM-1035 99   4.02876299715983   BM_25   
  21    Q0   CACM-1529 100   4.0263966917565535   BM_25   
-The query is ::
-['i', 'am', 'interested', 'in', 'hidden-line', 'and', 'hidden-surface', 'algorithms', 'for', 'cylinders', 'toroids', 'spheres', 'and', 'cones', 'this', 'is', 'a', 'rather', 'specialized', 'topic', 'in', 'computer', 'graphics']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  22    Q0   CACM-2913 1   19.63465751051632   BM_25   
  22    Q0   CACM-2692 2   17.497293829177174   BM_25   
@@ -2264,8 +2242,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  22    Q0   CACM-2627 98   6.8904343047433585   BM_25   
  22    Q0   CACM-2522 99   6.826150247511989   BM_25   
  22    Q0   CACM-2283 100   6.796361863399726   BM_25   
-The query is ::
-['distributed', 'computing', 'structures', 'and', 'algorithms']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  23    Q0   CACM-3137 1   11.56264236235284   BM_25   
  23    Q0   CACM-2849 2   11.54934272641002   BM_25   
@@ -2367,8 +2344,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  23    Q0   CACM-3058 98   4.357796641786049   BM_25   
  23    Q0   CACM-2078 99   4.3493281071406065   BM_25   
  23    Q0   CACM-1796 100   4.313703541341651   BM_25   
-The query is ::
-['applied', 'stochastic', 'processes']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  24    Q0   CACM-1696 1   9.547591393910547   BM_25   
  24    Q0   CACM-0020 2   8.66125051788314   BM_25   
@@ -2470,8 +2446,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  24    Q0   CACM-2580 98   3.121451809407491   BM_25   
  24    Q0   CACM-1308 99   3.112155263057979   BM_25   
  24    Q0   CACM-1458 100   3.1029139276447717   BM_25   
-The query is ::
-['performance', 'evaluation', 'and', 'modelling', 'of', 'computer', 'systems']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  25    Q0   CACM-2318 1   14.337264675762261   BM_25   
  25    Q0   CACM-1938 2   12.147789227085351   BM_25   
@@ -2573,8 +2548,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  25    Q0   CACM-1177 98   3.991958983322219   BM_25   
  25    Q0   CACM-0444 99   3.9732731849808296   BM_25   
  25    Q0   CACM-0268 100   3.953182269845249   BM_25   
-The query is ::
-['concurrency', 'control', 'mechanisms', 'in', 'operating', 'systems']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  26    Q0   CACM-2626 1   11.530489900789771   BM_25   
  26    Q0   CACM-1750 2   10.121109861761708   BM_25   
@@ -2676,8 +2650,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  26    Q0   CACM-3174 98   5.433344790341062   BM_25   
  26    Q0   CACM-1752 99   5.338107235050606   BM_25   
  26    Q0   CACM-0617 100   5.318274706176588   BM_25   
-The query is ::
-['memory', 'management', 'aspects', 'of', 'operating', 'systems']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  27    Q0   CACM-2069 1   15.166650723646383   BM_25   
  27    Q0   CACM-2297 2   13.733246155654133   BM_25   
@@ -2779,8 +2752,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  27    Q0   CACM-0856 98   4.982650649532172   BM_25   
  27    Q0   CACM-2320 99   4.968594321163846   BM_25   
  27    Q0   CACM-2163 100   4.898237241950653   BM_25   
-The query is ::
-['any', 'information', 'on', 'packet', 'radio', 'networks', 'of', 'particular', 'interest', 'are', 'algorithms', 'for', 'packet', 'routing', 'and', 'for', 'dealing', 'with', 'changes', 'in', 'network', 'topography', 'i', 'am', 'not', 'interested', 'in', 'the', 'hardware', 'used', 'in', 'the', 'network']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  28    Q0   CACM-3032 1   82.91106225818031   BM_25   
  28    Q0   CACM-2949 2   71.97871236159845   BM_25   
@@ -2882,8 +2854,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  28    Q0   CACM-2016 98   11.896358005416321   BM_25   
  28    Q0   CACM-2424 99   11.77237645894179   BM_25   
  28    Q0   CACM-1456 100   11.76431118398582   BM_25   
-The query is ::
-['number-theoretic', 'algorithms', 'especially', 'involving', 'prime', 'number', 'series', 'sieves', 'and', 'chinese', 'remainder', 'theorem']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  29    Q0   CACM-2644 1   15.586573952518833   BM_25   
  29    Q0   CACM-2200 2   15.517899399104524   BM_25   
@@ -2985,8 +2956,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  29    Q0   CACM-1497 98   5.215883102213996   BM_25   
  29    Q0   CACM-0201 99   5.211931193607956   BM_25   
  29    Q0   CACM-0286 100   5.185709575774459   BM_25   
-The query is ::
-['articles', 'on', 'text', 'formatting', 'systems', 'including', 'what', 'you', 'see', 'is', 'what', 'you', 'get', 'systems', 'examples', 'tnroff', 'scribe', 'bravo']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  30    Q0   CACM-2876 1   34.983307819331195   BM_25   
  30    Q0   CACM-3142 2   34.57070058255998   BM_25   
@@ -3088,8 +3058,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  30    Q0   CACM-2806 98   12.117646280883331   BM_25   
  30    Q0   CACM-1435 99   12.007467165016255   BM_25   
  30    Q0   CACM-2951 100   12.004935728226137   BM_25   
-The query is ::
-['id', 'like', 'to', 'find', 'articles', 'describing', 'the', 'use', 'of', 'singular', 'value', 'decomposition', 'in', 'digital', 'image', 'processing', 'applications', 'include', 'finding', 'approximations', 'to', 'the', 'original', 'image', 'and', 'restoring', 'images', 'that', 'are', 'subject', 'to', 'noise', 'an', 'article', 'on', 'the', 'subject', 'is', 'h', 'andrews', 'and', 'c', 'patterson', 'outer', 'product', 'expansions', 'and', 'their', 'uses', 'in', 'digital', 'image', 'processing', 'american', 'mathematical', 'andrews', 'h', 'patterson', 'c']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  31    Q0   CACM-3047 1   106.78828319660178   BM_25   
  31    Q0   CACM-1686 2   102.17174438491513   BM_25   
@@ -3191,8 +3160,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  31    Q0   CACM-0333 98   22.77328345385154   BM_25   
  31    Q0   CACM-1652 99   22.591715995972365   BM_25   
  31    Q0   CACM-2702 100   22.493004246575833   BM_25   
-The query is ::
-['id', 'like', 'to', 'find', 'articles', 'describing', 'graph', 'algorithms', 'that', 'are', 'based', 'on', 'the', 'eigenvalue', 'decomposition', 'or', 'singular', 'value', 'decomposition', 'of', 'the', 'ajacency', 'matrix', 'for', 'the', 'graph', 'im', 'especially', 'interested', 'in', 'any', 'heuristic', 'algorithms', 'for', 'graph', 'coloring', 'and', 'graph', 'isomorphism', 'using', 'this', 'method']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  32    Q0   CACM-2177 1   125.71949098407217   BM_25   
  32    Q0   CACM-3139 2   124.65192817088797   BM_25   
@@ -3294,8 +3262,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  32    Q0   CACM-1172 98   17.922747648505055   BM_25   
  32    Q0   CACM-1744 99   17.79569416046837   BM_25   
  32    Q0   CACM-1873 100   17.611629601705403   BM_25   
-The query is ::
-['articles', 'about', 'the', 'sensitivity', 'of', 'the', 'eigenvalue', 'decomposition', 'of', 'real', 'matrices', 'in', 'particular', 'zero-one', 'matrices', 'im', 'especially', 'interested', 'in', 'the', 'separation', 'of', 'eigenspaces', 'corresponding', 'to', 'distinct', 'eigenvalues', 'articles', 'on', 'the', 'subject', 'c', 'davis', 'and', 'w', 'kahn', 'the', 'rotation', 'of', 'eigenvectors', 'by', 'a', 'permutation', 'siam', 'j', 'numerical', 'analysis', 'vol', 'no', 'g', 'stewart', 'error', 'bounds', 'for', 'approximate', 'invariant', 'subspaces', 'of', 'closed', 'linear', 'operators', 'siam', 'j', 'numerical', 'analysis', 'vol', 'no', 'davis', 'c', 'kahn', 'w', 'stewart', 'g']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  33    Q0   CACM-1954 1   57.11863785971802   BM_25   
  33    Q0   CACM-2548 2   52.863284175026266   BM_25   
@@ -3397,8 +3364,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  33    Q0   CACM-0744 98   17.661236539403532   BM_25   
  33    Q0   CACM-1150 99   17.60485824050475   BM_25   
  33    Q0   CACM-0537 100   17.560397836056644   BM_25   
-The query is ::
-['currently', 'interested', 'in', 'isolation', 'of', 'root', 'of', 'polynomial', 'there', 'is', 'an', 'old', 'more', 'recent', 'material', 'heindel', 'l']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  34    Q0   CACM-2660 1   14.537906082740355   BM_25   
  34    Q0   CACM-1615 2   11.748894206619738   BM_25   
@@ -3500,8 +3466,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  34    Q0   CACM-2774 98   3.25275626095257   BM_25   
  34    Q0   CACM-0141 99   3.236140615878049   BM_25   
  34    Q0   CACM-0599 100   3.236140615878049   BM_25   
-The query is ::
-['probabilistic', 'algorithms', 'especially', 'those', 'dealing', 'with', 'algebraic', 'and', 'symbolic', 'manipulation', 'some', 'examples', 'rabiin', 'probabilistic', 'algorithm', 'on', 'finite', 'field', 'siam', 'waztch', 'probabilistic', 'testing', 'of', 'polynomial', 'identities', 'siam', 'rabinm']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  35    Q0   CACM-1474 1   74.70235611604042   BM_25   
  35    Q0   CACM-2836 2   73.63234295226498   BM_25   
@@ -3603,8 +3568,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  35    Q0   CACM-2273 98   6.978698628382439   BM_25   
  35    Q0   CACM-3134 99   6.973326303948312   BM_25   
  35    Q0   CACM-1846 100   6.94747527274853   BM_25   
-The query is ::
-['fast', 'algorithm', 'for', 'context-free', 'language', 'recognition', 'or', 'parsing']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  36    Q0   CACM-2112 1   16.298111660203354   BM_25   
  36    Q0   CACM-2739 2   13.930843458172918   BM_25   
@@ -3706,8 +3670,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  36    Q0   CACM-2149 98   5.329440006436961   BM_25   
  36    Q0   CACM-1589 99   5.325466275748315   BM_25   
  36    Q0   CACM-2910 100   5.3091352786771875   BM_25   
-The query is ::
-['articles', 'describing', 'the', 'relationship', 'between', 'data', 'types', 'and', 'concurrency', 'eg', 'what', 'is', 'the', 'type', 'of', 'a', 'process', 'when', 'is', 'a', 'synchronization', 'attempt', 'between', 'two', 'processes', 'type', 'correct', 'in', 'a', 'message-passing', 'system', 'is', 'there', 'any', 'notion', 'of', 'the', 'types', 'of', 'messages--ie', 'any', 'way', 'to', 'check', 'that', 'the', 'sender', 'of', 'the', 'message', 'and', 'the', 'receiver', 'are', 'both', 'treating', 'the', 'bit', 'stream', 'as', 'some', 'particular', 'type']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  37    Q0   CACM-2265 1   58.30325448078787   BM_25   
  37    Q0   CACM-2244 2   57.39162748830459   BM_25   
@@ -3809,8 +3772,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  37    Q0   CACM-1922 98   1.337415655573445   BM_25   
  37    Q0   CACM-2937 99   1.1222380170100923   BM_25   
  37    Q0   CACM-0998 100   1.101333420196956   BM_25   
-The query is ::
-['what', 'is', 'the', 'type', 'of', 'a', 'module', 'i', 'dont', 'want', 'the', 'entire', 'literature', 'on', 'abstract', 'data', 'types', 'here', 'but', 'im', 'not', 'sure', 'how', 'to', 'phrase', 'this', 'to', 'avoid', 'it', 'im', 'interested', 'in', 'questions', 'about', 'how', 'one', 'can', 'check', 'that', 'a', 'module', 'matches', 'contexts', 'in', 'which', 'it', 'is', 'used']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  38    Q0   CACM-3031 1   45.524852616981434   BM_25   
  38    Q0   CACM-2867 2   40.43861334413344   BM_25   
@@ -3912,8 +3874,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  38    Q0   CACM-2208 98   17.967200423214138   BM_25   
  38    Q0   CACM-1934 99   17.93906428332648   BM_25   
  38    Q0   CACM-1162 100   17.88838321956611   BM_25   
-The query is ::
-['what', 'does', 'type', 'compatibility', 'mean', 'in', 'languages', 'that', 'allow', 'programmer', 'defined', 'types', 'you', 'might', 'want', 'to', 'restrict', 'this', 'to', 'extensible', 'languages', 'that', 'allow', 'definition', 'of', 'abstract', 'data', 'types', 'or', 'programmer-supplied', 'definitions', 'of', 'operators', 'like']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  39    Q0   CACM-2940 1   63.73587565837662   BM_25   
  39    Q0   CACM-2651 2   56.448670273562485   BM_25   
@@ -4015,8 +3976,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  39    Q0   CACM-1457 98   17.47577675423001   BM_25   
  39    Q0   CACM-1033 99   17.44023922101898   BM_25   
  39    Q0   CACM-2710 100   17.343471924068314   BM_25   
-The query is ::
-['list', 'all', 'articles', 'dealing', 'with', 'data', 'types', 'in', 'the', 'following', 'languages', 'that', 'are', 'referenced', 'frequently', 'in', 'papers', 'on', 'the', 'above', 'languages', 'eg', 'catch', 'any', 'languages', 'with', 'interesting', 'type', 'structures', 'that', 'i', 'might', 'have', 'missed']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  40    Q0   CACM-2956 1   59.434809974158945   BM_25   
  40    Q0   CACM-2705 2   56.813541444236584   BM_25   
@@ -4118,8 +4078,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  40    Q0   CACM-2906 98   29.362135248596953   BM_25   
  40    Q0   CACM-3171 99   29.338164952052765   BM_25   
  40    Q0   CACM-2644 100   28.935067727814314   BM_25   
-The query is ::
-['theory', 'of', 'distributed', 'systems', 'and', 'databases', 'subtopics', 'of', 'special', 'interest', 'include', 'reliability', 'and', 'fault-tolerance', 'in', 'distributed', 'systems', 'atomicity', 'distributed', 'transactions', 'synchronization', 'algorithms', 'resource', 'allocation', 'lower', 'bounds', 'and', 'models', 'for', 'asynchronous', 'parallel', 'systems', 'also', 'theory', 'of', 'communicating', 'processes', 'and', 'protocols', 'p', 'box', 'yale', 'station', 'new', 'haven', 'conn']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  41    Q0   CACM-2578 1   93.12072722254628   BM_25   
  41    Q0   CACM-3082 2   87.0825159244469   BM_25   
@@ -4221,8 +4180,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  41    Q0   CACM-1846 98   21.60430817417855   BM_25   
  41    Q0   CACM-1808 99   21.517752466813228   BM_25   
  41    Q0   CACM-1910 100   21.510950889460666   BM_25   
-The query is ::
-['computer', 'performance', 'evaluation', 'techniques', 'using', 'pattern', 'recognition', 'and', 'clustering', 'la']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  42    Q0   CACM-2641 1   19.858479709336958   BM_25   
  42    Q0   CACM-0462 2   18.834392848941732   BM_25   
@@ -4324,8 +4282,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  42    Q0   CACM-2683 98   6.225123964800018   BM_25   
  42    Q0   CACM-2859 99   6.219295210962902   BM_25   
  42    Q0   CACM-2988 100   6.186329182027476   BM_25   
-The query is ::
-['analysis', 'and', 'perception', 'of', 'shape', 'by', 'humans', 'and', 'computers', 'shape', 'descriptions', 'shape', 'recognition', 'by', 'computer', 'two-dimensional', 'shapes', 'measures', 'of', 'circularity', 'shape', 'matching']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  43    Q0   CACM-2569 1   110.47816526468074   BM_25   
  43    Q0   CACM-3107 2   90.36905696007112   BM_25   
@@ -4427,8 +4384,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  43    Q0   CACM-2024 98   6.35838506416268   BM_25   
  43    Q0   CACM-2447 99   6.347183624988193   BM_25   
  43    Q0   CACM-2262 100   6.339278745556869   BM_25   
-The query is ::
-['texture', 'analysis', 'by', 'computer', 'digitized', 'texture', 'analysis', 'texture', 'synthesis', 'perception', 'of', 'texture']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  44    Q0   CACM-2829 1   163.8427588005839   BM_25   
  44    Q0   CACM-2523 2   114.59725119339649   BM_25   
@@ -4530,8 +4486,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  44    Q0   CACM-0825 98   10.819409909953237   BM_25   
  44    Q0   CACM-2819 99   10.819232862043982   BM_25   
  44    Q0   CACM-2113 100   10.815674131032651   BM_25   
-The query is ::
-['the', 'use', 'of', 'operations', 'research', 'models', 'to', 'optimize', 'information', 'system', 'performance', 'this', 'includes', 'fine', 'tuning', 'decisions', 'such', 'as', 'secondary', 'index', 'selection', 'file', 'reorganization', 'and', 'distributed', 'databases']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  45    Q0   CACM-1976 1   22.293969236645147   BM_25   
  45    Q0   CACM-2452 2   21.726670345003004   BM_25   
@@ -4633,8 +4588,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  45    Q0   CACM-1515 98   9.757458993001453   BM_25   
  45    Q0   CACM-2390 99   9.75082615686019   BM_25   
  45    Q0   CACM-2370 100   9.748016589867822   BM_25   
-The query is ::
-['the', 'application', 'of', 'fuzzy', 'subset', 'theory', 'to', 'clustering', 'and', 'information', 'retrieval', 'problems', 'this', 'includes', 'performance', 'evaluation', 'and', 'automatic', 'indexing', 'considerations']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  46    Q0   CACM-2711 1   24.86371086610697   BM_25   
  46    Q0   CACM-2990 2   24.77692265502373   BM_25   
@@ -4736,8 +4690,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  46    Q0   CACM-1927 98   7.604597997568716   BM_25   
  46    Q0   CACM-1931 99   7.550483551865667   BM_25   
  46    Q0   CACM-0292 100   7.544891415024006   BM_25   
-The query is ::
-['the', 'use', 'of', 'bayesian', 'decision', 'models', 'to', 'optimize', 'information', 'retrieval', 'system', 'performance', 'this', 'includes', 'stopping', 'rules', 'to', 'determine', 'when', 'a', 'user', 'should', 'cease', 'scanning', 'the', 'output', 'of', 'a', 'retrieval', 'search']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  47    Q0   CACM-1699 1   29.21922382343918   BM_25   
  47    Q0   CACM-2278 2   29.132933729455623   BM_25   
@@ -4839,8 +4792,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  47    Q0   CACM-0626 98   9.253998275135814   BM_25   
  47    Q0   CACM-2139 99   9.246566705640484   BM_25   
  47    Q0   CACM-3087 100   9.120315770218221   BM_25   
-The query is ::
-['the', 'use', 'of', 'computer', 'science', 'principles', 'eg', 'data', 'structures', 'numerical', 'methods', 'in', 'generating', 'optimization', 'eg', 'linear', 'programming', 'algorithms', 'this', 'includes', 'issues', 'of', 'the', 'khachian', 'russian', 'ellipsoidal', 'algorithm', 'and', 'complexity', 'of', 'such', 'algorithms']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  48    Q0   CACM-2142 1   30.726394490959517   BM_25   
  48    Q0   CACM-2968 2   29.088947368761435   BM_25   
@@ -4942,8 +4894,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  48    Q0   CACM-1914 98   8.267649627914281   BM_25   
  48    Q0   CACM-2689 99   8.235738059811672   BM_25   
  48    Q0   CACM-2879 100   8.213692816702462   BM_25   
-The query is ::
-['the', 'role', 'of', 'information', 'retrieval', 'in', 'knowledge', 'based', 'systems', 'ie', 'expert', 'systems']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  49    Q0   CACM-1514 1   20.44951340916304   BM_25   
  49    Q0   CACM-3134 2   19.92641897162193   BM_25   
@@ -5045,8 +4996,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  49    Q0   CACM-2689 98   10.737943064525245   BM_25   
  49    Q0   CACM-1435 99   10.725867780814706   BM_25   
  49    Q0   CACM-2525 100   10.699413948999005   BM_25   
-The query is ::
-['parallel', 'processors', 'in', 'information', 'retrieval']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  50    Q0   CACM-2714 1   13.545577141648806   BM_25   
  50    Q0   CACM-3156 2   12.739656958624572   BM_25   
@@ -5148,8 +5098,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  50    Q0   CACM-2895 98   5.509554696593463   BM_25   
  50    Q0   CACM-2195 99   5.492487982523993   BM_25   
  50    Q0   CACM-2451 100   5.471566311376675   BM_25   
-The query is ::
-['parallel', 'processors', 'and', 'paging', 'algorithms']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  51    Q0   CACM-3075 1   15.228145832634631   BM_25   
  51    Q0   CACM-3156 2   14.947038720117037   BM_25   
@@ -5251,8 +5200,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  51    Q0   CACM-2627 98   4.310750525354399   BM_25   
  51    Q0   CACM-2819 99   4.292826614238557   BM_25   
  51    Q0   CACM-3097 100   4.27303692956755   BM_25   
-The query is ::
-['modelling', 'and', 'simulation', 'in', 'agricultural', 'ecosystems']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  52    Q0   CACM-2721 1   16.572148900017858   BM_25   
  52    Q0   CACM-2749 2   6.526419593972432   BM_25   
@@ -5354,8 +5302,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  52    Q0   CACM-2106 98   2.6586238971144063   BM_25   
  52    Q0   CACM-1380 99   2.620940820922711   BM_25   
  52    Q0   CACM-1484 100   2.4698433177249424   BM_25   
-The query is ::
-['mathematical', 'induction', 'group', 'theory', 'integers', 'modulo', 'm', 'probability', 'binomial', 'coefficients', 'binomial', 'theorem', 'homomorphism', 'morphism', 'transitivity', 'relations', 'relation', 'matrix', 'syracuse', 'university', 'link', 'hall', 'syracuse', 'n']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  53    Q0   CACM-0514 1   41.41554887927255   BM_25   
  53    Q0   CACM-0569 2   41.41554887927255   BM_25   
@@ -5457,8 +5404,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  53    Q0   CACM-1672 98   7.240434615435132   BM_25   
  53    Q0   CACM-2569 99   7.23951859912155   BM_25   
  53    Q0   CACM-2213 100   7.203914464707848   BM_25   
-The query is ::
-['semantics', 'of', 'programming', 'languages', 'including', 'abstract', 'specifications', 'of', 'data', 'types', 'denotational', 'semantics', 'and', 'proofs', 'of', 'correctness', 'hoare', 'a', 'dijkstra', 'e', 'university', 'of', 'massachusetts', 'amherst', 'ma']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  54    Q0   CACM-2295 1   23.93527022161806   BM_25   
  54    Q0   CACM-2192 2   17.531230047436093   BM_25   
@@ -5560,8 +5506,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  54    Q0   CACM-1729 98   3.089081956002372   BM_25   
  54    Q0   CACM-3185 99   3.0745291169046216   BM_25   
  54    Q0   CACM-0795 100   3.072982533371492   BM_25   
-The query is ::
-['anything', 'dealing', 'with', 'star', 'height', 'of', 'regular', 'languages', 'or', 'regular', 'expressions', 'or', 'regular', 'events']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  55    Q0   CACM-1896 1   81.85758031286338   BM_25   
  55    Q0   CACM-1898 2   81.6150994302205   BM_25   
@@ -5663,8 +5608,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  55    Q0   CACM-2368 98   10.001605925104496   BM_25   
  55    Q0   CACM-1235 99   9.91140912409842   BM_25   
  55    Q0   CACM-0695 100   9.829421023264135   BM_25   
-The query is ::
-['articles', 'relation', 'the', 'algebraic', 'theory', 'of', 'semigroups', 'and', 'monoids', 'to', 'the', 'study', 'of', 'automata', 'and', 'regular', 'languages']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  56    Q0   CACM-2327 1   13.860315261524159   BM_25   
  56    Q0   CACM-2650 2   12.43586321299125   BM_25   
@@ -5766,8 +5710,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  56    Q0   CACM-1214 98   0.7962059985209782   BM_25   
  56    Q0   CACM-2663 99   0.7526518618898015   BM_25   
  56    Q0   CACM-1961 100   0.7269048325811868   BM_25   
-The query is ::
-['abstracts', 'of', 'articles', 'j', 'backus', 'can', 'programming', 'be', 'liberated', 'from', 'the', 'von', 'neumann', 'style', 'a', 'functional', 'style', 'and', 'its', 'algebra', 'of', 'programs', 'cacm', 're', 'millo', 'r', 'lipton', 'a', 'perlis', 'letter', 'to', 'acm', 'forum', 'cacm', 'backus', 'j', 'de', 'millo', 'r', 'lipton', 'r', 'perlis', 'a']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  57    Q0   CACM-3077 1   70.45828040693097   BM_25   
  57    Q0   CACM-3140 2   60.89609391968071   BM_25   
@@ -5869,8 +5812,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  57    Q0   CACM-0627 98   -14.677314948703692   BM_25   
  57    Q0   CACM-2542 99   -14.708666427567312   BM_25   
  57    Q0   CACM-3078 100   -14.733308463982768   BM_25   
-The query is ::
-['algorithms', 'or', 'statistical', 'packages', 'for', 'anova', 'regression', 'using', 'least', 'squares', 'or', 'generalized', 'linear', 'models', 'system', 'design', 'capabilities', 'statistical', 'formula', 'are', 'of', 'interest', 'students', 't', 'test', 'wilcoxon', 'and', 'sign', 'tests', 'multivariate', 'and', 'univariate', 'components', 'can', 'be', 'included']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  58    Q0   CACM-2634 1   45.45629905050416   BM_25   
  58    Q0   CACM-1344 2   44.41733477535987   BM_25   
@@ -5972,8 +5914,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  58    Q0   CACM-2373 98   16.49262227198658   BM_25   
  58    Q0   CACM-0028 99   16.456979845736264   BM_25   
  58    Q0   CACM-1152 100   16.375970736176882   BM_25   
-The query is ::
-['dictionary', 'construction', 'and', 'accessing', 'methods', 'for', 'fast', 'retrieval', 'of', 'words', 'or', 'lexical', 'items', 'or', 'morphologically', 'related', 'information', 'hashing', 'or', 'indexing', 'methods', 'are', 'usually', 'applied', 'to', 'english', 'spelling', 'or', 'natural', 'language', 'problems']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  59    Q0   CACM-0144 1   67.84179838987946   BM_25   
  59    Q0   CACM-1700 2   67.6563296174374   BM_25   
@@ -6075,8 +6016,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  59    Q0   CACM-1988 98   42.246242340714055   BM_25   
  59    Q0   CACM-1975 99   42.17549904106251   BM_25   
  59    Q0   CACM-2688 100   42.17298091110395   BM_25   
-The query is ::
-['hardware', 'and', 'software', 'relating', 'to', 'database', 'management', 'systems', 'database', 'packages', 'back', 'end', 'computers', 'special', 'associative', 'hardware', 'with', 'microcomputers', 'attached', 'to', 'disk', 'heads', 'or', 'things', 'like', 'rap', 'relational', 'or', 'network', 'codasyl', 'or', 'hierarchical', 'models', 'systems', 'like', 'system', 'r', 'ims', 'adabas', 'total', 'etc']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  60    Q0   CACM-2967 1   62.259093828246215   BM_25   
  60    Q0   CACM-3026 2   60.26608305936565   BM_25   
@@ -6178,8 +6118,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  60    Q0   CACM-1272 98   30.47214917133417   BM_25   
  60    Q0   CACM-1774 99   30.32633024338194   BM_25   
  60    Q0   CACM-0078 100   30.186024435752927   BM_25   
-The query is ::
-['information', 'retrieval', 'articles', 'by', 'gerard', 'salton', 'or', 'others', 'about', 'clustering', 'bibliographic', 'coupling', 'use', 'of', 'citations', 'or', 'co-citations', 'the', 'vector', 'space', 'model', 'boolean', 'search', 'methods', 'using', 'inverted', 'files', 'feedback', 'etc', 'salton', 'g']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  61    Q0   CACM-2711 1   61.099283096964896   BM_25   
  61    Q0   CACM-2307 2   43.63364019367623   BM_25   
@@ -6281,8 +6220,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  61    Q0   CACM-1977 98   13.580951805961876   BM_25   
  61    Q0   CACM-1999 99   13.51839381805998   BM_25   
  61    Q0   CACM-3056 100   13.446330825235899   BM_25   
-The query is ::
-['results', 'relating', 'parallel', 'complexity', 'theory', 'both', 'for', 'prams', 'and', 'uniform', 'circuits']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  62    Q0   CACM-1961 1   18.60531021958791   BM_25   
  62    Q0   CACM-1368 2   12.669983907189014   BM_25   
@@ -6384,8 +6322,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  62    Q0   CACM-2743 98   5.324212214150508   BM_25   
  62    Q0   CACM-1870 99   5.239370475282479   BM_25   
  62    Q0   CACM-2557 100   5.2358285654422145   BM_25   
-The query is ::
-['algorithms', 'for', 'parallel', 'computation', 'and', 'especially', 'comparisons', 'between', 'parallel', 'and', 'sequential', 'algorithms']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  63    Q0   CACM-2973 1   40.26849385703879   BM_25   
  63    Q0   CACM-2266 2   37.72251419060663   BM_25   
@@ -6487,8 +6424,7 @@ query_id   Q0   doc_id   rank   BM_25   system_name
  63    Q0   CACM-1660 98   15.324497240021929   BM_25   
  63    Q0   CACM-1952 99   15.324497240021929   BM_25   
  63    Q0   CACM-3006 100   15.311202521767376   BM_25   
-The query is ::
-['list', 'all', 'articles', 'on', 'el1', 'and', 'ecl', 'el1', 'may', 'be', 'given', 'as', 'el1', 'i', 'dont', 'remember', 'how', 'they', 'did', 'it']
+
 query_id   Q0   doc_id   rank   BM_25   system_name
  64    Q0   CACM-2651 1   77.89823823564441   BM_25   
  64    Q0   CACM-0595 2   18.380496505830408   BM_25   
