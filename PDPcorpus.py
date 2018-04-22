@@ -1,65 +1,44 @@
+import os
 import string
-from urllib.request import urlopen
 import bs4 as bsnew
-from nltk import word_tokenize
-from string import punctuation
 
-
-def hasNumbersNoAlpha(inputString):# function to make sure it contains only the digits and punctuations and no letters
+def numsOnly(inputString):# function to make sure it contains only the digits and punctuations and no alphabets
     if any(c.isalpha() for c in inputString):
         return False
     if any(char.isdigit() for char in inputString):
         return True
 
-
-
-def generateCorpus(choice):
-    file = open("bfs.txt", "r")
-    validLinks = file.readlines()
-    file.close()
+def generateTokens(dir):
+    filelist = os.listdir(os.path.abspath(dir))
     validTokens = []
     punctuation = string.punctuation.replace("-", "")  # retaining hyphen- question
-    count = 0
-    for url in validLinks:
-        print(url)
-        if len(url) <= 1:
+    nums_punctuation="!\"#$%&'()*+/;<=>?@[\]^_`{|}~"   # removing . , - : for digits
+    for f in filelist:
+        if len(f) <= 1:
             continue
-        urlindex = url.index('wiki/')
-        specificUrl = url[urlindex + 5:]
-        specificUrl = specificUrl.strip("\n")
-        filename = r"bfsFiles/" + specificUrl + ".html"
-        file_contents = open(filename, "r", encoding='utf-8').read()
+        full_path=dir+"//"+f
+        file_contents = open(full_path, "r", encoding='utf-8').read()
         bs = bsnew.BeautifulSoup(file_contents, "html.parser")
-        titles = specificUrl.split("_")
-        content = bs.find("div", {"id": "mw-content-text"})
-        for a in content.findAll("table"):
-            a.decompose()
-        for a in content.findAll("img"):
-            a.decompose()
-        for a in content.findAll("pre"):
-            a.decompose()
-        for a in content.findAll("code"):
-            a.decompose()
+        content = bs.find("pre")
         raw = content.get_text()
         contents = str(raw).split()
-        contents.extend(titles)
         for t in contents:
-            if "http" in t:#ignoring links
+            if numsOnly(t):
+                for digit in t:
+                    if digit in nums_punctuation:
+                        t=t.replace(digit,"")
+                validTokens.append(t.strip(string.punctuation))
                 continue
-            if hasNumbersNoAlpha(t):
-                validTokens.append(t)
+            t = t.lower()
+            for char in t:
+                if char in punctuation:
+                    t = t.replace(char, "")
+            if len(t)==1 and t== "-":
                 continue
-            if choice == "1":
-                t = t.lower()
-                for char in t:
-                    if char in punctuation:
-                        t = t.replace(char, "")
             if len(t) >= 1:
                 validTokens.append(t)
-        urlindex = url.index('wiki/')
-        specificUrl = url[urlindex + 5:]
-        specificUrl = specificUrl.strip("\n")
-        filename = r"corpus/" + specificUrl + ".txt"
+        f=f.replace(".html","")
+        filename = r"tokenized_Files/" + f + ".txt"
         newFile = open(filename, 'w', encoding='utf-8')
         newFile.write(str(validTokens))
         validTokens = []
@@ -67,7 +46,7 @@ def generateCorpus(choice):
 
 
 if __name__ == "__main__":
-    choice = input(
-        "Enter 0 for no case folding/punctuation handling \nEnter 1 for default settings where casefolding and punctions are removed")
-    type(choice)
-    generateCorpus(choice)
+    fullPath = input("Enter the absolute path to the folder having raw documents")
+    type(fullPath)
+    #D:\\IR_project\\rawDocuments
+    generateTokens(fullPath)
