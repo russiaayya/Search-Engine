@@ -18,7 +18,7 @@ def generateIndex(fullPath):
                 termDoctf[t][file] = 1
             else:
                 termDoctf[t][file] += 1
-    filename="unigram.txt"
+    filename="unigram_index.txt"
     newFile = open(filename, 'w', encoding='utf-8')
     newFile.write(str(termDoctf))
     newFile.close()
