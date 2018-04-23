@@ -35,20 +35,20 @@ def tfidf_ranking():
                     for docID in unigrams[word]:
                         fi=unigrams[word][docID]  # term frequency in that document
                         dl=documentLen[docID]   #length of the document
-                        tf = fi/dl
-                        idf = math.log(N/ni)
+                        tf = float(fi)/float(dl)
+                        idf = math.log(float(N)/float(ni))
                         score = tf * idf
                         if docID not in docScore:
                             docScore[docID]=score
                         else:
                             docScore[docID]+=score
             revSortedDocScore = sorted(docScore, key=docScore.get, reverse=True)# sorting in descending order
-            if flag==0:
+            if flag==0: #create a new file
                 filename = "tfidf_Ranking" + ".txt"
                 newFile = open(filename, 'w', encoding='utf-8')
                 flag=1
             newFile.write("\n")
-            newFile.write("query_id   Q0   doc_id   rank   score   system_name\n")
+            newFile.write("q_id  Q0   doc_id   rank        score        system_name\n")
             for index,token in enumerate(revSortedDocScore):
                 index+=1
                 newFile.write(str(qid)+"   ")

@@ -1,5 +1,5 @@
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  1    Q0   CACM-2371 1   0.3069862293259668 tf-idf 
  1    Q0   CACM-1591 2   0.302973097912041 tf-idf 
  1    Q0   CACM-1033 3   0.29360422523349433 tf-idf 
@@ -101,7 +101,7 @@ query_id   Q0   doc_id   rank   score   system_name
  1    Q0   CACM-1698 99   0.14687418733196575 tf-idf 
  1    Q0   CACM-2811 100   0.14583042350711198 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  2    Q0   CACM-3078 1   0.18725285930274752 tf-idf 
  2    Q0   CACM-2250 2   0.1816933948299101 tf-idf 
  2    Q0   CACM-0047 3   0.1727261183430695 tf-idf 
@@ -203,7 +203,7 @@ query_id   Q0   doc_id   rank   score   system_name
  2    Q0   CACM-0741 99   0.09121050048160334 tf-idf 
  2    Q0   CACM-0742 100   0.09121050048160334 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  3    Q0   CACM-2316 1   0.23767084865704488 tf-idf 
  3    Q0   CACM-2295 2   0.14361475784818548 tf-idf 
  3    Q0   CACM-1459 3   0.13171245512255741 tf-idf 
@@ -305,7 +305,7 @@ query_id   Q0   doc_id   rank   score   system_name
  3    Q0   CACM-1236 99   0.06604761293846516 tf-idf 
  3    Q0   CACM-1474 100   0.06580576734324711 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  4    Q0   CACM-3043 1   0.42829284433113873 tf-idf 
  4    Q0   CACM-1943 2   0.42221861683624756 tf-idf 
  4    Q0   CACM-2439 3   0.41093270151653394 tf-idf 
@@ -407,7 +407,7 @@ query_id   Q0   doc_id   rank   score   system_name
  4    Q0   CACM-2794 99   0.26852433557289473 tf-idf 
  4    Q0   CACM-2572 100   0.2677637293554289 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  5    Q0   CACM-2035 1   0.38522754415064203 tf-idf 
  5    Q0   CACM-2321 2   0.3824808445893072 tf-idf 
  5    Q0   CACM-1435 3   0.37406673456668793 tf-idf 
@@ -509,7 +509,7 @@ query_id   Q0   doc_id   rank   score   system_name
  5    Q0   CACM-1835 99   0.20181847131725644 tf-idf 
  5    Q0   CACM-0796 100   0.2014318505494535 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  6    Q0   CACM-2826 1   0.41622295869310416 tf-idf 
  6    Q0   CACM-3035 2   0.37217404510352836 tf-idf 
  6    Q0   CACM-2721 3   0.37151308875504485 tf-idf 
@@ -611,7 +611,7 @@ query_id   Q0   doc_id   rank   score   system_name
  6    Q0   CACM-1587 99   0.19205654285925947 tf-idf 
  6    Q0   CACM-2932 100   0.19185339422377432 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  7    Q0   CACM-3043 1   0.5686163658795937 tf-idf 
  7    Q0   CACM-0371 2   0.4644690075932709 tf-idf 
  7    Q0   CACM-3141 3   0.4403711451469046 tf-idf 
@@ -713,7 +713,7 @@ query_id   Q0   doc_id   rank   score   system_name
  7    Q0   CACM-0086 99   0.24198544761017313 tf-idf 
  7    Q0   CACM-2904 100   0.24170272120934538 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  8    Q0   CACM-1685 1   0.5374761199305877 tf-idf 
  8    Q0   CACM-2776 2   0.4149583001249634 tf-idf 
  8    Q0   CACM-2614 3   0.3343115780962198 tf-idf 
@@ -815,7 +815,7 @@ query_id   Q0   doc_id   rank   score   system_name
  8    Q0   CACM-3127 99   0.10756809061080118 tf-idf 
  8    Q0   CACM-2069 100   0.10726837402037434 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  9    Q0   CACM-1685 1   0.5177272141614225 tf-idf 
  9    Q0   CACM-2578 2   0.42759037519747944 tf-idf 
  9    Q0   CACM-2949 3   0.3906580231851294 tf-idf 
@@ -917,7 +917,7 @@ query_id   Q0   doc_id   rank   score   system_name
  9    Q0   CACM-3026 99   0.12514795587237248 tf-idf 
  9    Q0   CACM-2892 100   0.12425855877126162 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  10    Q0   CACM-2316 1   0.4306137120945433 tf-idf 
  10    Q0   CACM-2714 2   0.31251061040313877 tf-idf 
  10    Q0   CACM-1795 3   0.3002425468458148 tf-idf 
@@ -1019,7 +1019,7 @@ query_id   Q0   doc_id   rank   score   system_name
  10    Q0   CACM-2699 99   0.07857524000533098 tf-idf 
  10    Q0   CACM-3102 100   0.07845797750524088 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  11    Q0   CACM-1923 1   0.27780192053305885 tf-idf 
  11    Q0   CACM-2316 2   0.2637025269503009 tf-idf 
  11    Q0   CACM-2699 3   0.23084600204163833 tf-idf 
@@ -1121,7 +1121,7 @@ query_id   Q0   doc_id   rank   score   system_name
  11    Q0   CACM-3119 99   0.03288005735839521 tf-idf 
  11    Q0   CACM-2493 100   0.03287517435952632 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  12    Q0   CACM-1461 1   0.22347577920911316 tf-idf 
  12    Q0   CACM-3127 2   0.19358147544154825 tf-idf 
  12    Q0   CACM-2246 3   0.1591871654063895 tf-idf 
@@ -1223,7 +1223,7 @@ query_id   Q0   doc_id   rank   score   system_name
  12    Q0   CACM-2577 99   0.045727124960932265 tf-idf 
  12    Q0   CACM-1519 100   0.04559399934008157 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  13    Q0   CACM-2464 1   0.3066609197288062 tf-idf 
  13    Q0   CACM-2748 2   0.29825876891763575 tf-idf 
  13    Q0   CACM-1795 3   0.2934837948734365 tf-idf 
@@ -1325,7 +1325,7 @@ query_id   Q0   doc_id   rank   score   system_name
  13    Q0   CACM-2812 99   0.05088218628904334 tf-idf 
  13    Q0   CACM-1443 100   0.05037722470509574 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  14    Q0   CACM-1724 1   0.44033644192103855 tf-idf 
  14    Q0   CACM-2976 2   0.23311233432851047 tf-idf 
  14    Q0   CACM-2964 3   0.22764211524409966 tf-idf 
@@ -1427,7 +1427,7 @@ query_id   Q0   doc_id   rank   score   system_name
  14    Q0   CACM-3037 99   0.1109289968433375 tf-idf 
  14    Q0   CACM-2816 100   0.11091443114965836 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  15    Q0   CACM-2464 1   0.8635609808079727 tf-idf 
  15    Q0   CACM-2835 2   0.4832176375361652 tf-idf 
  15    Q0   CACM-2611 3   0.38380488035909904 tf-idf 
@@ -1529,7 +1529,7 @@ query_id   Q0   doc_id   rank   score   system_name
  15    Q0   CACM-3054 99   0.11821178543535375 tf-idf 
  15    Q0   CACM-1694 100   0.11815095509337549 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  16    Q0   CACM-3141 1   0.31859898646936263 tf-idf 
  16    Q0   CACM-1461 2   0.2773662129800745 tf-idf 
  16    Q0   CACM-2114 3   0.27001763921235056 tf-idf 
@@ -1631,7 +1631,7 @@ query_id   Q0   doc_id   rank   score   system_name
  16    Q0   CACM-3127 99   0.12455408135684803 tf-idf 
  16    Q0   CACM-3090 100   0.1240059510250639 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  17    Q0   CACM-1795 1   0.3147138648250627 tf-idf 
  17    Q0   CACM-2491 2   0.29837162877822987 tf-idf 
  17    Q0   CACM-2748 3   0.2972625053053311 tf-idf 
@@ -1733,7 +1733,7 @@ query_id   Q0   doc_id   rank   score   system_name
  17    Q0   CACM-2953 99   0.06817511960464802 tf-idf 
  17    Q0   CACM-2929 100   0.06807009155717883 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  18    Q0   CACM-1795 1   0.3121975350081386 tf-idf 
  18    Q0   CACM-2748 2   0.2584215206867485 tf-idf 
  18    Q0   CACM-2714 3   0.2526808926486255 tf-idf 
@@ -1835,7 +1835,7 @@ query_id   Q0   doc_id   rank   score   system_name
  18    Q0   CACM-2138 99   0.08527549728566922 tf-idf 
  18    Q0   CACM-2567 100   0.08491946397116243 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  19    Q0   CACM-2973 1   0.1778149078039038 tf-idf 
  19    Q0   CACM-0371 2   0.15410725145737628 tf-idf 
  19    Q0   CACM-2714 3   0.15410590412048572 tf-idf 
@@ -1937,7 +1937,7 @@ query_id   Q0   doc_id   rank   score   system_name
  19    Q0   CACM-2025 99   0.03852681286434407 tf-idf 
  19    Q0   CACM-2094 100   0.03852681286434407 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  20    Q0   CACM-2199 1   0.2976868081473899 tf-idf 
  20    Q0   CACM-2172 2   0.24758009025093367 tf-idf 
  20    Q0   CACM-1963 3   0.21977742872001546 tf-idf 
@@ -2039,7 +2039,7 @@ query_id   Q0   doc_id   rank   score   system_name
  20    Q0   CACM-1116 99   0.08295021528012725 tf-idf 
  20    Q0   CACM-1953 100   0.08172354243951772 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  21    Q0   CACM-2337 1   0.29188344087902474 tf-idf 
  21    Q0   CACM-2932 2   0.2726243273342685 tf-idf 
  21    Q0   CACM-0371 3   0.21541328567156734 tf-idf 
@@ -2141,7 +2141,7 @@ query_id   Q0   doc_id   rank   score   system_name
  21    Q0   CACM-2263 99   0.05557188870254583 tf-idf 
  21    Q0   CACM-1766 100   0.055173760879414294 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  22    Q0   CACM-2473 1   0.4848456650336179 tf-idf 
  22    Q0   CACM-2384 2   0.3925247399350122 tf-idf 
  22    Q0   CACM-0371 3   0.3103617561358946 tf-idf 
@@ -2243,7 +2243,7 @@ query_id   Q0   doc_id   rank   score   system_name
  22    Q0   CACM-2535 99   0.16687644121205916 tf-idf 
  22    Q0   CACM-1473 100   0.1668018842141945 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  23    Q0   CACM-2578 1   0.21710538373563276 tf-idf 
  23    Q0   CACM-0371 2   0.21541328567156734 tf-idf 
  23    Q0   CACM-3137 3   0.214171224147763 tf-idf 
@@ -2345,7 +2345,7 @@ query_id   Q0   doc_id   rank   score   system_name
  23    Q0   CACM-1457 99   0.06796820223096328 tf-idf 
  23    Q0   CACM-2169 100   0.06784178871919336 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  24    Q0   CACM-1696 1   0.21284756793905715 tf-idf 
  24    Q0   CACM-0268 2   0.19266374684138793 tf-idf 
  24    Q0   CACM-3043 3   0.153755361396432 tf-idf 
@@ -2447,7 +2447,7 @@ query_id   Q0   doc_id   rank   score   system_name
  24    Q0   CACM-3013 99   0.02222426360384717 tf-idf 
  24    Q0   CACM-1308 100   0.022096578883319572 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  25    Q0   CACM-2318 1   0.3449459339514881 tf-idf 
  25    Q0   CACM-1653 2   0.2553643757951639 tf-idf 
  25    Q0   CACM-1374 3   0.24870900629166542 tf-idf 
@@ -2549,7 +2549,7 @@ query_id   Q0   doc_id   rank   score   system_name
  25    Q0   CACM-2262 99   0.10397758577119745 tf-idf 
  25    Q0   CACM-2892 100   0.10332840053459583 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  26    Q0   CACM-1922 1   0.2238515907144756 tf-idf 
  26    Q0   CACM-1461 2   0.22347577920911316 tf-idf 
  26    Q0   CACM-2578 3   0.20303405715322229 tf-idf 
@@ -2651,7 +2651,7 @@ query_id   Q0   doc_id   rank   score   system_name
  26    Q0   CACM-2735 99   0.06773287601155531 tf-idf 
  26    Q0   CACM-2111 100   0.06760522130100993 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  27    Q0   CACM-2798 1   0.25951367056191743 tf-idf 
  27    Q0   CACM-2069 2   0.23762759246870396 tf-idf 
  27    Q0   CACM-2311 3   0.2247256099116902 tf-idf 
@@ -2753,7 +2753,7 @@ query_id   Q0   doc_id   rank   score   system_name
  27    Q0   CACM-1409 99   0.07958339154218881 tf-idf 
  27    Q0   CACM-1071 100   0.07924877401666003 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  28    Q0   CACM-2890 1   0.9449997675091057 tf-idf 
  28    Q0   CACM-1685 2   0.9158431592322601 tf-idf 
  28    Q0   CACM-3032 3   0.8134551828496409 tf-idf 
@@ -2855,7 +2855,7 @@ query_id   Q0   doc_id   rank   score   system_name
  28    Q0   CACM-0517 99   0.2826729018156512 tf-idf 
  28    Q0   CACM-0048 100   0.2824402640060746 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  29    Q0   CACM-2089 1   0.3381793158117232 tf-idf 
  29    Q0   CACM-2229 2   0.3237613111733035 tf-idf 
  29    Q0   CACM-1933 3   0.27792990109278565 tf-idf 
@@ -2957,7 +2957,7 @@ query_id   Q0   doc_id   rank   score   system_name
  29    Q0   CACM-1783 99   0.08525407934637602 tf-idf 
  29    Q0   CACM-2725 100   0.08427740314075265 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  30    Q0   CACM-0195 1   0.37315687043585277 tf-idf 
  30    Q0   CACM-1256 2   0.2674344378827344 tf-idf 
  30    Q0   CACM-2311 3   0.25427230019113123 tf-idf 
@@ -3059,7 +3059,7 @@ query_id   Q0   doc_id   rank   score   system_name
  30    Q0   CACM-1698 99   0.10066714362760586 tf-idf 
  30    Q0   CACM-1435 100   0.10043009275638592 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  31    Q0   CACM-3047 1   0.9937102036317376 tf-idf 
  31    Q0   CACM-2065 2   0.8868249008763069 tf-idf 
  31    Q0   CACM-3013 3   0.8356246025866573 tf-idf 
@@ -3161,7 +3161,7 @@ query_id   Q0   doc_id   rank   score   system_name
  31    Q0   CACM-3139 99   0.41016937931998537 tf-idf 
  31    Q0   CACM-0893 100   0.4100881332365914 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  32    Q0   CACM-3139 1   1.083821173088285 tf-idf 
  32    Q0   CACM-2172 2   0.9903203610037347 tf-idf 
  32    Q0   CACM-1839 3   0.986959634573138 tf-idf 
@@ -3263,7 +3263,7 @@ query_id   Q0   doc_id   rank   score   system_name
  32    Q0   CACM-2402 99   0.3336764910403593 tf-idf 
  32    Q0   CACM-1401 100   0.33364420269725165 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  33    Q0   CACM-1954 1   1.2656776836097001 tf-idf 
  33    Q0   CACM-2805 2   1.079987553906623 tf-idf 
  33    Q0   CACM-2284 3   0.996290380857162 tf-idf 
@@ -3365,7 +3365,7 @@ query_id   Q0   doc_id   rank   score   system_name
  33    Q0   CACM-1797 99   0.5323294341543118 tf-idf 
  33    Q0   CACM-2721 100   0.532123726348633 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  34    Q0   CACM-1763 1   0.35563007886707476 tf-idf 
  34    Q0   CACM-2385 2   0.3160787512733352 tf-idf 
  34    Q0   CACM-1644 3   0.29532063643240114 tf-idf 
@@ -3467,7 +3467,7 @@ query_id   Q0   doc_id   rank   score   system_name
  34    Q0   CACM-1694 99   0.1258593786500199 tf-idf 
  34    Q0   CACM-1744 100   0.12582825844508866 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  35    Q0   CACM-2090 1   0.6901083396932571 tf-idf 
  35    Q0   CACM-2932 2   0.4204139378008392 tf-idf 
  35    Q0   CACM-2836 3   0.4009424981308772 tf-idf 
@@ -3569,7 +3569,7 @@ query_id   Q0   doc_id   rank   score   system_name
  35    Q0   CACM-0340 99   0.1367161239436686 tf-idf 
  35    Q0   CACM-2226 100   0.13656019452633186 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  36    Q0   CACM-2084 1   0.35700679933872087 tf-idf 
  36    Q0   CACM-2476 2   0.27842215394271574 tf-idf 
  36    Q0   CACM-2030 3   0.22909445013298024 tf-idf 
@@ -3671,7 +3671,7 @@ query_id   Q0   doc_id   rank   score   system_name
  36    Q0   CACM-2898 99   0.07758248700672496 tf-idf 
  36    Q0   CACM-0292 100   0.07734110760479707 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  37    Q0   CACM-2265 1   1.1564529094644427 tf-idf 
  37    Q0   CACM-3048 2   0.9130121989129977 tf-idf 
  37    Q0   CACM-1637 3   0.8508362900237544 tf-idf 
@@ -3773,7 +3773,7 @@ query_id   Q0   doc_id   rank   score   system_name
  37    Q0   CACM-1143 99   0.6268842480155807 tf-idf 
  37    Q0   CACM-1382 100   0.6263052172581918 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  38    Q0   CACM-3031 1   0.5818016326861941 tf-idf 
  38    Q0   CACM-2305 2   0.503193766374291 tf-idf 
  38    Q0   CACM-1014 3   0.49246554744821996 tf-idf 
@@ -3875,7 +3875,7 @@ query_id   Q0   doc_id   rank   score   system_name
  38    Q0   CACM-0243 99   0.35007779417621854 tf-idf 
  38    Q0   CACM-2561 100   0.34843091568002243 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  39    Q0   CACM-2651 1   0.55782677055085 tf-idf 
  39    Q0   CACM-3103 2   0.49537420847766334 tf-idf 
  39    Q0   CACM-2316 3   0.4795291186634061 tf-idf 
@@ -3977,7 +3977,7 @@ query_id   Q0   doc_id   rank   score   system_name
  39    Q0   CACM-2243 99   0.2074620974914049 tf-idf 
  39    Q0   CACM-1162 100   0.2067020188132288 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  40    Q0   CACM-2316 1   0.7877751616366563 tf-idf 
  40    Q0   CACM-1588 2   0.5597666403157655 tf-idf 
  40    Q0   CACM-1459 3   0.5244612990418394 tf-idf 
@@ -4079,7 +4079,7 @@ query_id   Q0   doc_id   rank   score   system_name
  40    Q0   CACM-1135 99   0.2376237726256258 tf-idf 
  40    Q0   CACM-1257 100   0.23715652023447692 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  41    Q0   CACM-2578 1   0.9591918069077505 tf-idf 
  41    Q0   CACM-3137 2   0.7021811830989304 tf-idf 
  41    Q0   CACM-3043 3   0.663538470181819 tf-idf 
@@ -4181,7 +4181,7 @@ query_id   Q0   doc_id   rank   score   system_name
  41    Q0   CACM-3078 99   0.2955733744408739 tf-idf 
  41    Q0   CACM-1511 100   0.29491000859283445 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  42    Q0   CACM-2641 1   0.4021092027268207 tf-idf 
  42    Q0   CACM-2318 2   0.30138343588871724 tf-idf 
  42    Q0   CACM-2231 3   0.2681813509491111 tf-idf 
@@ -4283,7 +4283,7 @@ query_id   Q0   doc_id   rank   score   system_name
  42    Q0   CACM-2980 99   0.09913718078629755 tf-idf 
  42    Q0   CACM-1267 100   0.09902450134897897 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  43    Q0   CACM-2569 1   0.3315507795849131 tf-idf 
  43    Q0   CACM-1404 2   0.3310711158230857 tf-idf 
  43    Q0   CACM-3100 3   0.3044928299544158 tf-idf 
@@ -4385,7 +4385,7 @@ query_id   Q0   doc_id   rank   score   system_name
  43    Q0   CACM-1003 99   0.16140786111721706 tf-idf 
  43    Q0   CACM-2523 100   0.16101998347074997 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  44    Q0   CACM-2829 1   0.5778191157854933 tf-idf 
  44    Q0   CACM-2825 2   0.4522651867699504 tf-idf 
  44    Q0   CACM-1732 3   0.4473121793632347 tf-idf 
@@ -4487,7 +4487,7 @@ query_id   Q0   doc_id   rank   score   system_name
  44    Q0   CACM-2113 99   0.09531940700319617 tf-idf 
  44    Q0   CACM-0396 100   0.09507741581896469 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  45    Q0   CACM-2318 1   0.4284648719479105 tf-idf 
  45    Q0   CACM-2114 2   0.4111438160058253 tf-idf 
  45    Q0   CACM-3137 3   0.3972638489075538 tf-idf 
@@ -4589,7 +4589,7 @@ query_id   Q0   doc_id   rank   score   system_name
  45    Q0   CACM-2819 99   0.19398093389873794 tf-idf 
  45    Q0   CACM-2948 100   0.19378070345801512 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  46    Q0   CACM-0329 1   0.43157678706297764 tf-idf 
  46    Q0   CACM-1457 2   0.4185705595073636 tf-idf 
  46    Q0   CACM-2711 3   0.3981611494124683 tf-idf 
@@ -4691,7 +4691,7 @@ query_id   Q0   doc_id   rank   score   system_name
  46    Q0   CACM-1034 99   0.18726788506238595 tf-idf 
  46    Q0   CACM-1622 100   0.18677070976504997 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  47    Q0   CACM-2848 1   0.6380476736456904 tf-idf 
  47    Q0   CACM-2288 2   0.5990287216301694 tf-idf 
  47    Q0   CACM-3012 3   0.592156315481333 tf-idf 
@@ -4793,7 +4793,7 @@ query_id   Q0   doc_id   rank   score   system_name
  47    Q0   CACM-1325 99   0.28293579165598387 tf-idf 
  47    Q0   CACM-2105 100   0.2823700833472305 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  48    Q0   CACM-2932 1   0.5147336603733391 tf-idf 
  48    Q0   CACM-1353 2   0.4635661434613323 tf-idf 
  48    Q0   CACM-1809 3   0.46030865112999164 tf-idf 
@@ -4895,7 +4895,7 @@ query_id   Q0   doc_id   rank   score   system_name
  48    Q0   CACM-1677 99   0.286402105456875 tf-idf 
  48    Q0   CACM-1135 100   0.2860435640900821 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  49    Q0   CACM-0651 1   0.3422638305976993 tf-idf 
  49    Q0   CACM-2311 2   0.31964382974033784 tf-idf 
  49    Q0   CACM-2288 3   0.31516756044447797 tf-idf 
@@ -4997,7 +4997,7 @@ query_id   Q0   doc_id   rank   score   system_name
  49    Q0   CACM-0143 99   0.14490493308260338 tf-idf 
  49    Q0   CACM-0292 100   0.1443206769537173 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  50    Q0   CACM-2278 1   0.26810149607369305 tf-idf 
  50    Q0   CACM-2288 2   0.2659748693723793 tf-idf 
  50    Q0   CACM-2714 3   0.24593547554543005 tf-idf 
@@ -5099,7 +5099,7 @@ query_id   Q0   doc_id   rank   score   system_name
  50    Q0   CACM-1509 99   0.07794075797962571 tf-idf 
  50    Q0   CACM-2895 100   0.07708393089633837 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  51    Q0   CACM-2022 1   0.2594224399543141 tf-idf 
  51    Q0   CACM-2714 2   0.2483820904864582 tf-idf 
  51    Q0   CACM-0371 3   0.21541328567156734 tf-idf 
@@ -5201,7 +5201,7 @@ query_id   Q0   doc_id   rank   score   system_name
  51    Q0   CACM-0303 99   0.06138996312907134 tf-idf 
  51    Q0   CACM-3061 100   0.06129265682963829 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  52    Q0   CACM-2721 1   0.28634012611611187 tf-idf 
  52    Q0   CACM-2749 2   0.19386470044831317 tf-idf 
  52    Q0   CACM-1928 3   0.184276423832092 tf-idf 
@@ -5303,7 +5303,7 @@ query_id   Q0   doc_id   rank   score   system_name
  52    Q0   CACM-2276 99   0.051261502206405504 tf-idf 
  52    Q0   CACM-2535 100   0.05113896997569116 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  53    Q0   CACM-0514 1   0.6557127997491919 tf-idf 
  53    Q0   CACM-0569 2   0.6557127997491919 tf-idf 
  53    Q0   CACM-0139 3   0.6304930766819153 tf-idf 
@@ -5405,7 +5405,7 @@ query_id   Q0   doc_id   rank   score   system_name
  53    Q0   CACM-0727 99   0.12492043116715489 tf-idf 
  53    Q0   CACM-2790 100   0.12450650304130396 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  54    Q0   CACM-2295 1   0.6826407026565203 tf-idf 
  54    Q0   CACM-2316 2   0.4375842114224383 tf-idf 
  54    Q0   CACM-3031 3   0.39293006093394306 tf-idf 
@@ -5507,7 +5507,7 @@ query_id   Q0   doc_id   rank   score   system_name
  54    Q0   CACM-2851 99   0.18806480137267909 tf-idf 
  54    Q0   CACM-2752 100   0.18746669683068928 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  55    Q0   CACM-1896 1   0.8695588343252705 tf-idf 
  55    Q0   CACM-1898 2   0.8472624539579559 tf-idf 
  55    Q0   CACM-1993 3   0.7867437072466732 tf-idf 
@@ -5609,7 +5609,7 @@ query_id   Q0   doc_id   rank   score   system_name
  55    Q0   CACM-1629 99   0.08757156725175164 tf-idf 
  55    Q0   CACM-1589 100   0.08746445015635114 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  56    Q0   CACM-2327 1   0.5744678111543741 tf-idf 
  56    Q0   CACM-1991 2   0.4458948314273392 tf-idf 
  56    Q0   CACM-2316 3   0.3788443192186934 tf-idf 
@@ -5711,7 +5711,7 @@ query_id   Q0   doc_id   rank   score   system_name
  56    Q0   CACM-1875 99   0.19427682774548583 tf-idf 
  56    Q0   CACM-2113 100   0.19420043203035667 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  57    Q0   CACM-1106 1   0.702513342296999 tf-idf 
  57    Q0   CACM-3077 2   0.6817998491284682 tf-idf 
  57    Q0   CACM-3140 3   0.5544529890568323 tf-idf 
@@ -5813,7 +5813,7 @@ query_id   Q0   doc_id   rank   score   system_name
  57    Q0   CACM-2316 99   0.25683795226021877 tf-idf 
  57    Q0   CACM-0796 100   0.2566357993552113 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  58    Q0   CACM-1344 1   0.6518986819709512 tf-idf 
  58    Q0   CACM-2634 2   0.5649384650828573 tf-idf 
  58    Q0   CACM-1816 3   0.549503258188049 tf-idf 
@@ -5915,7 +5915,7 @@ query_id   Q0   doc_id   rank   score   system_name
  58    Q0   CACM-3047 99   0.22097625079389424 tf-idf 
  58    Q0   CACM-2907 100   0.22079881853961816 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  59    Q0   CACM-0028 1   0.5507198114256001 tf-idf 
  59    Q0   CACM-0661 2   0.42620488627393566 tf-idf 
  59    Q0   CACM-2711 3   0.4047181018333768 tf-idf 
@@ -6017,7 +6017,7 @@ query_id   Q0   doc_id   rank   score   system_name
  59    Q0   CACM-1886 99   0.234932074872336 tf-idf 
  59    Q0   CACM-0096 100   0.23484386507016908 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  60    Q0   CACM-2967 1   0.6772642736625568 tf-idf 
  60    Q0   CACM-2311 2   0.571916752965131 tf-idf 
  60    Q0   CACM-2976 3   0.4779498664575493 tf-idf 
@@ -6119,7 +6119,7 @@ query_id   Q0   doc_id   rank   score   system_name
  60    Q0   CACM-1409 99   0.21569431060003882 tf-idf 
  60    Q0   CACM-3137 100   0.2155702517664797 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  61    Q0   CACM-1287 1   0.5634953274501198 tf-idf 
  61    Q0   CACM-2711 2   0.537613747632058 tf-idf 
  61    Q0   CACM-1830 3   0.4765558719481441 tf-idf 
@@ -6221,7 +6221,7 @@ query_id   Q0   doc_id   rank   score   system_name
  61    Q0   CACM-2381 99   0.1778139445178798 tf-idf 
  61    Q0   CACM-1438 100   0.17771194100700885 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  62    Q0   CACM-2932 1   0.3050908455770322 tf-idf 
  62    Q0   CACM-1368 2   0.26167374724753956 tf-idf 
  62    Q0   CACM-2327 3   0.2273809514457133 tf-idf 
@@ -6323,7 +6323,7 @@ query_id   Q0   doc_id   rank   score   system_name
  62    Q0   CACM-1888 99   0.07515856947058078 tf-idf 
  62    Q0   CACM-3038 100   0.07509597106071679 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  63    Q0   CACM-0371 1   0.4308265713431346 tf-idf 
  63    Q0   CACM-2973 2   0.38651219716086915 tf-idf 
  63    Q0   CACM-2714 3   0.34520716198404067 tf-idf 
@@ -6425,7 +6425,7 @@ query_id   Q0   doc_id   rank   score   system_name
  63    Q0   CACM-1294 99   0.12747708166085417 tf-idf 
  63    Q0   CACM-2200 100   0.12644551603292692 tf-idf 
 
-query_id   Q0   doc_id   rank   score   system_name
+q_id  Q0   doc_id   rank        score        system_name
  64    Q0   CACM-2651 1   0.2607992653335588 tf-idf 
  64    Q0   CACM-0527 2   0.22412987049560246 tf-idf 
  64    Q0   CACM-2513 3   0.21473057248422767 tf-idf 
