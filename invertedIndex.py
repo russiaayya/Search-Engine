@@ -27,5 +27,5 @@ def generateIndex(fullPath):
 if __name__ == "__main__":
     fullPath = input("Enter the absolute path to the folder having tokenized files")
     type(fullPath)
-    #D:\IR_project\tokenized_files
+    #D:\Search-Engine\tokenized_files
     generateIndex(fullPath)# unigram

@@ -10,6 +10,7 @@ def extractQueries():
     newFile1 = open(filename, 'w', encoding='utf-8')
     for q in content:
         qid=q.find("docno").get_text()
+        qid=qid.strip()
         q=q.get_text().strip('')
         q=q.replace("\n"," ")
         q=q.replace("\t", " ")
@@ -63,5 +64,5 @@ def extractRelevence():
     newFile = open(filename, 'w', encoding='utf-8')
     newFile.write(str(queryRel))
     newFile.close()
-#extractQueries()
+extractQueries()
 extractRelevence()
