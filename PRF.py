@@ -14,7 +14,7 @@ def pseudoRelevance(queryId, numExpandedQueryTerms, queries):
     expPseudoRel_queries = {}
     docScore = createTfRelevanceDocs(getTopK_Results())
     revTerms = sorted(docScore, key=docScore.get,reverse=True) #list of high frequency non-stopped terms in the selected top k docs
-    print (revTerms)
+    #print (revTerms)
     # queries = open("queries.txt", 'r', encoding='utf-8')
     # rawQueryTerms = eval(queries.read())
     queryTerms = queries[queryId]
@@ -27,7 +27,11 @@ def pseudoRelevance(queryId, numExpandedQueryTerms, queries):
             num += 1
             if num == numExpandedQueryTerms:
                 break
-    expPseudoRel_queries[queryId] = queryTerms.extend(kExpandedQueryTerms)
+    print ("queryTerms",queryTerms)
+    print("kexpanded",kExpandedQueryTerms)
+    completeRelevantList=list(set(queryTerms+kExpandedQueryTerms))
+    print ("checking",completeRelevantList)
+    expPseudoRel_queries[queryId]=completeRelevantList
 
     print (expPseudoRel_queries)
 
@@ -58,18 +62,19 @@ def createTfRelevanceDocs(docIds):
 
 
 # get top N docs from BM25
-def getTopK_Results():
+def getTopK_Results(queryId):
     file_contents = open("bm25_Ranking_WithRelevance.txt", 'r', encoding='utf-8')
-    topK_Result = file_contents.readlines()
-    # topK_Result = topK_Result[2:11]
-    i = 2
+    topK_Result = eval(file_contents.read)
+    # topK_Result = file_contents.readlines()
+    queryDocIds = topK_Result[queryId]
     topK = []
+    i=0
     while(i!=12):
-        topK.append(topK_Result[i].split()[2])
+        topK.append(queryDocIds)
+        # topK.append(topK_Result[i].split()[2])
         # print (topK_Result[i].split()[2])
         i +=1
     return topK
-
 
 
 
@@ -79,7 +84,7 @@ if __name__ == "__main__":
     queries = eval(content.read())
     numQuery = len(queries.keys())
     for qId in queries.keys():
-        pseudoRelevance(qId, 20,queries)
+        pseudoRelevance(qId, 5,queries)
 
 
 
