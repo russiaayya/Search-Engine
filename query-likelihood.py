@@ -2,6 +2,7 @@ import math
 def generateranking():
     # lambda value for Jelinek-Mercer smoothing
     lmd = 0.35
+    flag=0
     docScore={}
     file_contents = open("unigram_index.txt", 'r', encoding='utf-8')
     unigrams = eval(file_contents.read())
@@ -15,7 +16,6 @@ def generateranking():
 
     for qid,q in queries.items():
             for word in q:
-                print("query word is",word)
                 if word in unigrams.keys():
                     ni = len(unigrams[word])
                     cq = 0
@@ -25,18 +25,15 @@ def generateranking():
                         fi = unigrams[word][docID]
                         dl = documentLen[docID]
                         score = math.log(((1 - lmd) * fi / dl) + lmd * cq / C)
-                        print("score is",score)
                         if docID not in docScore:
                             docScore[docID] = score
                         else:
                             docScore[docID] += score
             revSortedDocScore = sorted(docScore, key=docScore.get, reverse=True)# sorting in descending order
             if flag==0:
-                filename = "Query-likelihood" + ".txt"
+                filename = "Query-likelihood-ranking" + ".txt"
                 newFile = open(filename, 'w', encoding='utf-8')
                 flag=1
-            newFile.write("The query is ::\n")
-            newFile.write(str(q))
             newFile.write("\n")
             newFile.write("query_id   Q0   doc_id   rank   Query-likelihood   system_name\n")
             for index,token in enumerate(revSortedDocScore):
