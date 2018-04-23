@@ -6,6 +6,8 @@ def extractQueries():
     bs = bsnew.BeautifulSoup(file_contents, "html.parser")
     content = bs.findAll("doc")
     queryId={}
+    filename = "queriesForLucene.txt"
+    newFile1 = open(filename, 'w', encoding='utf-8')
     for q in content:
         qid=q.find("docno").get_text()
         q=q.get_text().strip('')
@@ -14,7 +16,10 @@ def extractQueries():
         q=q.replace(qid,"").strip()
         qTokens=queryPunctuations(q)
         queryId[qid]=qTokens
-        qTokens=[]
+        str1 = ' '.join(qTokens)
+        newFile1.write(str1)
+        newFile1.write("\n")
+    newFile1.close()
     filename = "queries.txt"
     newFile = open(filename, 'w', encoding='utf-8')
     newFile.write(str(queryId))
@@ -41,4 +46,22 @@ def queryPunctuations(q):
         if len(term) >= 1:
             validQterms.append(term)
     return validQterms
-extractQueries()
+
+
+
+def extractRelevence():
+    file_contents = open("cacm.rel.txt", "r", encoding='utf-8')
+    queryRel={}
+    relevance=file_contents.readlines()
+    for r in relevance:
+        r=r.split()
+        if r[0] not in queryRel:
+            queryRel[r[0]]=[r[2]]
+        else:
+            queryRel[r[0]].append(r[2])
+    filename = "queryRelevance.txt"
+    newFile = open(filename, 'w', encoding='utf-8')
+    newFile.write(str(queryRel))
+    newFile.close()
+#extractQueries()
+extractRelevence()
