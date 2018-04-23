@@ -22,6 +22,7 @@ def generateranking():
         totalCount+=value
     averageDl=totalCount/3204
     flag=0
+    prfqueries = {}
     for qid,q in queries.items():
             qfi={}
             for word in q:
@@ -42,6 +43,15 @@ def generateranking():
                         else:
                             docScore[docID]+=score
             revSortedDocScore = sorted(docScore, key=docScore.get, reverse=True)# sorting in descending order
+
+            for index,token in enumerate(revSortedDocScore):
+                index+=1
+                if qid not in prfqueries:
+                    prfqueries[qid]=[token]
+                else:
+                    prfqueries[qid].append(token)
+                if index==100:#For getting only top 100
+                    break
             if flag==0:
                 filename = "bm25_Ranking" + ".txt"
                 newFile = open(filename, 'w', encoding='utf-8')
@@ -61,6 +71,8 @@ def generateranking():
                     break
             docScore={}
     newFile.close()
-
+    filenamePRF = "bm25_Ranking_PRF" + ".txt"
+    newFilePRF = open(filenamePRF, 'w', encoding='utf-8')
+    newFilePRF.write(str(prfqueries))
 if __name__ == "__main__":
     generateranking()
