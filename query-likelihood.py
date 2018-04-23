@@ -2,8 +2,8 @@ import math
 def generateranking():
     # lambda value for Jelinek-Mercer smoothing
     lmd = 0.35
-    flag=0
-    docScore={}
+    flag = 0
+    docScore = {}
     file_contents = open("unigram_index.txt", 'r', encoding='utf-8')
     unigrams = eval(file_contents.read())
     file_contents = open("queries.txt", 'r', encoding='utf-8')
