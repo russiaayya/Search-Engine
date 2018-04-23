@@ -22,7 +22,14 @@ def generateTokens(dir):
         content = bs.find("pre")
         raw = content.get_text()
         contents = str(raw).split()
+        lastIndex=0
+        if "AM" in contents:
+            lastIndex=rindex(contents,"AM")
+        if "PM" in contents:
+            lastIndex=rindex(contents,"PM")
         for t in contents:
+            if contents.index(t)==lastIndex:
+                break
             if numsOnly(t):
                 for digit in t:
                     if digit in nums_punctuation:
@@ -44,6 +51,7 @@ def generateTokens(dir):
         validTokens = []
         newFile.close()
 
-
+def rindex(mylist, myvalue):
+    return len(mylist) - mylist[::-1].index(myvalue) - 1
 if __name__ == "__main__":
-    generateTokens("D:\\IR_project\\rawDocuments")
+    generateTokens("D://Search-Engine//rawDocuments")
