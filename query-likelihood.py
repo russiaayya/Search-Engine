@@ -35,7 +35,7 @@ def generateranking():
                 newFile = open(filename, 'w', encoding='utf-8')
                 flag=1
             newFile.write("\n")
-            newFile.write("query_id   Q0   doc_id   rank   Query-likelihood   system_name\n")
+            newFile.write("query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name\n")
             for index,token in enumerate(revSortedDocScore):
                 index+=1
                 newFile.write(str(qid)+"   ")
@@ -43,7 +43,7 @@ def generateranking():
                 newFile.write(str(token) + " ")
                 newFile.write(str(index)+"   ")
                 newFile.write(str(docScore[token]))
-                newFile.write("   Query-likelihood   ")
+                newFile.write("   smoothedQueryLikelihood     ")
                 newFile.write("\n")
                 if index==100:#For getting only top 100
                     break
