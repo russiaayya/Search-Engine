@@ -23,7 +23,7 @@ def generateranking():
                     for docID in unigrams[word]:
                         fi = unigrams[word][docID]
                         dl = documentLen[docID]
-                        score = math.log((((1 - lmd) * fi) / dl) + ((lmd * cq) / C))
+                        score = math.log((1 - lmd) * (fi / dl) + lmd * (cq / C))
                         if docID not in docScore:
                             docScore[docID] = score
                         else:
