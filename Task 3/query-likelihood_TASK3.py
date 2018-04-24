@@ -5,7 +5,6 @@ def generateranking(indexTxt, queriesTxt, docTermCountTxt, rankingTxt, system_na
     # lambda value for Jelinek-Mercer smoothing
     lmd = 0.35
     flag = 0
-    docScore = {}
     file_contents = open(indexTxt, 'r', encoding='utf-8')
     unigrams = eval(file_contents.read())
     file_contents = open(queriesTxt, 'r', encoding='utf-8')
@@ -15,8 +14,8 @@ def generateranking(indexTxt, queriesTxt, docTermCountTxt, rankingTxt, system_na
     C = 0
     for value in documentLen.values():
         C += value
-    snippetQueryDocs = {}
     for qid, q in queries.items():
+        docScore = {}
         for word in q:
             if word in unigrams.keys():
                 cq = 0
@@ -31,14 +30,6 @@ def generateranking(indexTxt, queriesTxt, docTermCountTxt, rankingTxt, system_na
                     else:
                         docScore[docID] += score
         revSortedDocScore = sorted(docScore, key=docScore.get, reverse=True)  # sorting in descending order
-        for index, token in enumerate(revSortedDocScore):
-            index += 1
-            if qid not in snippetQueryDocs:
-                snippetQueryDocs[qid] = [token]
-            else:
-                snippetQueryDocs[qid].append(token)
-            if index == 100:  # For getting only top 100
-                break
         if flag == 0:
             filename = rankingTxt + ".txt"
             newFile = open(filename, 'w', encoding='utf-8')
@@ -56,7 +47,6 @@ def generateranking(indexTxt, queriesTxt, docTermCountTxt, rankingTxt, system_na
             newFile.write("\n")
             if index == 100:  # For getting only top 100
                 break
-        docScore = {}
     newFile.close()
 
 
