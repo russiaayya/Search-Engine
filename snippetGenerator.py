@@ -9,12 +9,15 @@ def generateSnippet():
     file_contents = open("common_words.txt", 'r', encoding='utf-8')
     stop_Words = file_contents.readline()
     file_contents.close()
-    sentenceDict={}
-    significance={}
+    snippet_html=open("snippetGeneration.html",'w',encoding='utf-8')
+    snippet_html.write("<!DOCTYPE html>")
+    snippet_html.write("<html>")
     for qid in queryRanks.keys():
         docList=queryRanks[qid]
         queryWords = queries[qid]
         for doc in docList:
+            sentenceDict = {}
+            significance = {}
             filename = r"rawDocuments/" + doc + ".html"
             doc_contents = open(filename, 'r', encoding='utf-8')
             bs = bsnew.BeautifulSoup(doc_contents, "html.parser")
@@ -41,13 +44,12 @@ def generateSnippet():
                 significance[sentence]=score
             revSignificance = sorted(significance, key=significance.get, reverse=True)  # sorting in descending order
             revSignificance=revSignificance[:3]
-            print(revSignificance)
-            print(queryWords)
-
-
-
-
-
-            exit(0)
-
+            snippet_html.write("<p>")
+            snippet_html.write(str(queryWords))
+            snippet_html.write("</p>")
+            snippet_html.write("<p>")
+            snippet_html.write(str(revSignificance))
+            snippet_html.write("</p>")
+    snippet_html.write("</html>")
+    snippet_html.close()
 generateSnippet()
