@@ -1,5 +1,4 @@
 
-
 def precision_cal(rel_ret_count,retrieved_count):
     return rel_ret_count/retrieved_count
 
@@ -15,20 +14,18 @@ def avg_precision_cal(precision_table, relevant_docs, rel_ret_count):
             sum += precision_table[docID]
     return sum/rel_ret_count
 
-def evaluation():
+def evaluation(queryRelevanceFile, top100file, recallTableFile):
     relevance_dict = dict()
-    file_contents = open("queryRelevance.txt", 'r', encoding='utf-8')
+    file_contents = open(queryRelevanceFile, 'r', encoding='utf-8')
     relevance_dict = eval(file_contents.read())
     file_contents.close()
     top_100_dict = dict()
-    file_contents = open("bm25_Ranking_TOP100_retrieved.txt", 'r', encoding='utf-8')
+    file_contents = open(top100file, 'r', encoding='utf-8')
     top_100_dict = eval(file_contents.read())
     file_contents.close()
     num_of_queries = len(relevance_dict)
 
-    # precision_table = dict()
-    # recall_table = dict()
-    newFile = open('bm25_precision_recall_table.txt', 'w', encoding='utf-8')
+    newFile = open(recallTableFile, 'w', encoding='utf-8')
     MAP_numerator = 0
     MRR_numerator = 0
 
@@ -51,8 +48,6 @@ def evaluation():
                     rel_docs_ranks_RR.append(retrieved_count)
                 precision = precision_cal(rel_ret_count, retrieved_count)
                 recall = recall_cal(rel_ret_count, len(relevance_dict[q_id]))
-                # precision_table[(q_id, docID)] = precision
-                # recall_table[(q_id, docID)] = recall
                 precision_table[docID] = precision
                 recall_table[docID] = recall
                 if retrieved_count == 5:
@@ -89,4 +84,5 @@ def evaluation():
 
 
 if __name__ == "__main__":
-    evaluation()
+    evaluation("queryRelevance.txt","bm25_Ranking_TOP100_retrieved.txt","bm25_precision_recall_table.txt")
+    evaluation("queryRelevance.txt", "bm25_Ranking_TOP100_retrieved.txt", "bm25_precision_recall_table.txt")
