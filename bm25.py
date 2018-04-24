@@ -59,8 +59,10 @@ def generateranking(enrichmentFlag):
             if flag==0:
                 if queryEnrichment:
                     filename = "bm25_Ranking_EnrichedQuery" + ".txt"
+                    systemName = "   Pseudo_Relevance_Feedback_BM25   "
                 else:
                     filename = "bm25_Ranking" + ".txt"
+                    systemName = "   BM_25   "
                 newFile = open(filename, 'w', encoding='utf-8')
                 flag=1
             newFile.write("\n")
@@ -72,7 +74,7 @@ def generateranking(enrichmentFlag):
                 newFile.write(str(token) + " ")
                 newFile.write(str(index)+"   ")
                 newFile.write(str(docScore[token]))
-                newFile.write("   BM_25   ")
+                newFile.write(str(systemName))
                 newFile.write("\n")
                 if index==100:#For getting only top 100
                     break
