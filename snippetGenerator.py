@@ -44,11 +44,21 @@ def generateSnippet():
                 significance[sentence]=score
             revSignificance = sorted(significance, key=significance.get, reverse=True)  # sorting in descending order
             revSignificance=revSignificance[:3]
+            finalSnippet=[]
+            for relSentence in revSignificance:
+                for word in relSentence.split():
+                    if word in queryWords:
+                        word="<b>"+word+"</b>"
+                        finalSnippet.append(word)
+                    else:
+                        finalSnippet.append(word)
+            snippet_html.write("The query is:\n")
             snippet_html.write("<p>")
-            snippet_html.write(str(queryWords))
+            snippet_html.write(" ".join(queryWords))
             snippet_html.write("</p>")
             snippet_html.write("<p>")
-            snippet_html.write(str(revSignificance))
+            snippet_html.write(" ".join(finalSnippet))
+            #snippet_html.write(" ".join(revSignificance))
             snippet_html.write("</p>")
     snippet_html.write("</html>")
     snippet_html.close()

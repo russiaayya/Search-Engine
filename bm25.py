@@ -27,6 +27,7 @@ def generateranking(enrichmentFlag):
     averageDl=totalCount/3204
     flag=0
     prfqueries = {}
+    retrieved_docs={}
     for qid,q in queries.items():
             qfi={}
             for word in q:
@@ -47,6 +48,7 @@ def generateranking(enrichmentFlag):
                         else:
                             docScore[docID]+=score
             revSortedDocScore = sorted(docScore, key=docScore.get, reverse=True)# sorting in descending order
+            retrieved_docs[qid]=revSortedDocScore[:100]
             if not queryEnrichment:
                 for index,token in enumerate(revSortedDocScore):
                     index+=1
@@ -84,6 +86,11 @@ def generateranking(enrichmentFlag):
         filenamePRF = "bm25_Ranking_PRF" + ".txt"
         newFilePRF = open(filenamePRF, 'w', encoding='utf-8')
         newFilePRF.write(str(prfqueries))
+        newFilePRF.close()
+    filename = "bm25_Ranking_TOP100_retrieved" + ".txt"
+    newFile = open(filename, 'w', encoding='utf-8')
+    newFile.write(str(retrieved_docs))
+    newFile.close()
 if __name__ == "__main__":
     queryEnrichment=True
     generateranking(queryEnrichment)
