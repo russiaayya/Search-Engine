@@ -39,7 +39,7 @@ def pseudoRelevance(queryId, numExpandedQueryTerms, queries,expPseudoRel_queries
 
 
 def createTfRelevanceDocs(docIds):
-    stopWords = open("common_words", 'r', encoding='utf-8')
+    stopWords = open("common_words.txt", 'r', encoding='utf-8')
     stopWordsList = stopWords.read()
     relevanceDocs = {}
     for docId in docIds:

@@ -66,7 +66,7 @@ def generateranking(enrichmentFlag):
                 newFile = open(filename, 'w', encoding='utf-8')
                 flag=1
             newFile.write("\n")
-            newFile.write("query_id   Q0   doc_id   rank   BM_25   system_name\n")
+            newFile.write("query_id   Q0   doc_id   rank   score   system_name\n")
             for index,token in enumerate(revSortedDocScore):
                 index+=1
                 newFile.write(str(qid)+"   ")
