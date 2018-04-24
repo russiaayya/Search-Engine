@@ -20,8 +20,8 @@ def tfidf_ranking():
     totalCount=0
     for value in documentLen.values():
         totalCount+=value
-
     flag=0
+    retrieved_docs = {}
     for qid,q in queries.items():
             qfi={}
             for word in q:
@@ -43,6 +43,7 @@ def tfidf_ranking():
                         else:
                             docScore[docID]+=score
             revSortedDocScore = sorted(docScore, key=docScore.get, reverse=True)# sorting in descending order
+            retrieved_docs[qid] = revSortedDocScore[:100]
             if flag==0: #create a new file
                 filename = "tfidf_Ranking" + ".txt"
                 newFile = open(filename, 'w', encoding='utf-8')
@@ -63,6 +64,10 @@ def tfidf_ranking():
                     break
             docScore={}
     newFile.close()
+    filename = "tfidf_TOP100_retrieved" + ".txt"
+    File = open(filename, 'w', encoding='utf-8')
+    File.write(str(retrieved_docs))
+    File.close()
 
 if __name__ == "__main__":
     tfidf_ranking()
