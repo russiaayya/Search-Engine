@@ -7,7 +7,7 @@ def generateSnippet():
     file_contents = open("bm25_Ranking_PRF.txt", 'r', encoding='utf-8')
     queryRanks = eval(file_contents.read())
     file_contents.close()
-    file_contents = open("common_words", 'r', encoding='utf-8')
+    file_contents = open("common_words.txt", 'r', encoding='utf-8')
     stop_Words = file_contents.readline()
     file_contents.close()
 
@@ -20,14 +20,13 @@ def generateSnippet():
             content = bs.find("pre")
             content=content.get_text()
             content=content.strip()
-            print(content)
+            contentLines=content.splitlines()
             queryWords=queries[qid]
             for word in queryWords:
                 if word in stop_Words:
                     continue
-                if word in content:
-                    print(word)
+                for sentence in contentLines:
+                    
             exit(0)
-
 
 generateSnippet()
