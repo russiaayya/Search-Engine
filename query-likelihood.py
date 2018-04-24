@@ -20,15 +20,18 @@ def generateranking():
                     cq = 0
                     for docID in unigrams[word]:
                         cq += unigrams[word][docID]
-                    for docID in unigrams[word]:
-                        fi = unigrams[word][docID]
+                    for docID in documentLen.keys():
+                        if docID in unigrams[word]:
+                            fi = unigrams[word][docID]
+                        else:
+                            fi=0
                         dl = documentLen[docID]
                         score = math.log((1 - lmd) * (fi / dl) + lmd * (cq / C))
                         if docID not in docScore:
                             docScore[docID] = score
                         else:
                             docScore[docID] += score
-            revSortedDocScore = sorted(docScore, key=docScore.get, reverse=True)# sorting in descending order
+            revSortedDocScore = sorted(docScore, key=docScore.get ,reverse=True)# sorting in descending order
             for index, token in enumerate(revSortedDocScore):
                 index += 1
                 if qid not in snippetQueryDocs:
@@ -42,12 +45,12 @@ def generateranking():
                 newFile = open(filename, 'w', encoding='utf-8')
                 flag=1
             newFile.write("\n")
-            newFile.write("query_id   Q0   doc_id   rank   score   system_name\n")
+            newFile.write("query_id  Q0   doc_id   rank     score              system_name\n")
             for index,token in enumerate(revSortedDocScore):
                 index+=1
-                newFile.write(str(qid)+"   ")
+                newFile.write(str(qid)+"        ")
                 newFile.write("Q0   ")
-                newFile.write(str(token) + " ")
+                newFile.write(str(token) + "    ")
                 newFile.write(str(index)+"   ")
                 newFile.write(str(docScore[token]))
                 newFile.write("   smoothedQueryLikelihood     ")
