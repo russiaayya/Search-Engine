@@ -12,6 +12,7 @@ def generateSnippet():
     snippet_html=open("snippetGeneration.html",'w',encoding='utf-8')
     snippet_html.write("<!DOCTYPE html>")
     snippet_html.write("<html>")
+    prev=1
     for qid in queryRanks.keys():
         docList=queryRanks[qid]
         queryWords = queries[qid]
@@ -24,7 +25,7 @@ def generateSnippet():
             content = bs.find("pre")
             content=content.get_text()
             content=content.strip()
-            contentLines=content.splitlines()
+            contentLines=content.split(".")
             properContents=[]
             for c in contentLines:
                 if not c=="":
@@ -43,7 +44,7 @@ def generateSnippet():
                 score=(squareFreq*squareFreq)/length
                 significance[sentence]=score
             revSignificance = sorted(significance, key=significance.get, reverse=True)  # sorting in descending order
-            revSignificance=revSignificance[:3]
+            revSignificance=revSignificance[:2]
             finalSnippet=[]
             for relSentence in revSignificance:
                 finalSnippet.append("...")
@@ -53,17 +54,19 @@ def generateSnippet():
                         finalSnippet.append(word)
                     else:
                         finalSnippet.append(word)
-                finalSnippet.append("...")
-            snippet_html.write("<p>")
-            snippet_html.write("<i>The query id is:</i>")
-            snippet_html.write(qid)
-            snippet_html.write("</p>")
-            snippet_html.write("<p>")
-            snippet_html.write("<u>Query:\t</u>")
-            snippet_html.write("<font color = \"blue\">")
-            snippet_html.write(" ".join(queryWords))
-            snippet_html.write("</font>")
-            snippet_html.write("</p>")
+            finalSnippet.append("...")
+            if prev!=qid:
+                snippet_html.write("<p>")
+                snippet_html.write("<i>Query id:</i>")
+                snippet_html.write(qid)
+                snippet_html.write("</p>")
+                snippet_html.write("<p>")
+                snippet_html.write("<u>Query:\t</u>")
+                snippet_html.write("<font color = \"blue\">")
+                snippet_html.write(" ".join(queryWords))
+                snippet_html.write("</font>")
+                snippet_html.write("</p>")
+                prev=qid
             snippet_html.write("<p>")
             snippet_html.write("<i>The document is:\n</i>")
             snippet_html.write(doc)
