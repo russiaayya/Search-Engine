@@ -1,5 +1,5 @@
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 1   Q0   CACM-1085 1   -2.7085414091277253   smoothedQueryLikelihood     
 1   Q0   CACM-0983 2   -2.7516874877685713   smoothedQueryLikelihood     
 1   Q0   CACM-0066 3   -2.79277665852899   smoothedQueryLikelihood     
@@ -101,7 +101,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 1   Q0   CACM-1546 99   -3.2906628033354712   smoothedQueryLikelihood     
 1   Q0   CACM-2015 100   -3.2979035950873072   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 2   Q0   CACM-0174 1   -2.9962482761090152   smoothedQueryLikelihood     
 2   Q0   CACM-0379 2   -3.038606576315641   smoothedQueryLikelihood     
 2   Q0   CACM-0395 3   -3.038606576315641   smoothedQueryLikelihood     
@@ -203,7 +203,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 2   Q0   CACM-3019 99   -3.2350777034182063   smoothedQueryLikelihood     
 2   Q0   CACM-1365 100   -3.2407751638851066   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 3   Q0   CACM-2875 1   -2.263535357564635   smoothedQueryLikelihood     
 3   Q0   CACM-2291 2   -2.327129766068532   smoothedQueryLikelihood     
 3   Q0   CACM-0447 3   -2.4995067785660634   smoothedQueryLikelihood     
@@ -305,7 +305,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 3   Q0   CACM-2222 99   -2.9356088323112637   smoothedQueryLikelihood     
 3   Q0   CACM-0758 100   -2.9430555374426026   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 4   Q0   CACM-0189 1   -0.4058539916673652   smoothedQueryLikelihood     
 4   Q0   CACM-1137 2   -2.4003855277888784   smoothedQueryLikelihood     
 4   Q0   CACM-1068 3   -2.4545298446446617   smoothedQueryLikelihood     
@@ -407,7 +407,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 4   Q0   CACM-1176 99   -3.1716825126459964   smoothedQueryLikelihood     
 4   Q0   CACM-1537 100   -3.1716825126459964   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 5   Q0   CACM-0189 1   -0.4058539916673652   smoothedQueryLikelihood     
 5   Q0   CACM-2875 2   -2.263535357564635   smoothedQueryLikelihood     
 5   Q0   CACM-0391 3   -2.467123542754111   smoothedQueryLikelihood     
@@ -509,7 +509,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 5   Q0   CACM-0958 99   -3.038327331214212   smoothedQueryLikelihood     
 5   Q0   CACM-1284 100   -3.038327331214212   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 6   Q0   CACM-0189 1   -0.8117079833347304   smoothedQueryLikelihood     
 6   Q0   CACM-2875 2   -2.263535357564635   smoothedQueryLikelihood     
 6   Q0   CACM-2778 3   -2.4995067785660634   smoothedQueryLikelihood     
@@ -611,7 +611,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 6   Q0   CACM-0353 99   -3.0746793370534475   smoothedQueryLikelihood     
 6   Q0   CACM-0355 100   -3.0746793370534475   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 7   Q0   CACM-0189 1   -0.4058539916673652   smoothedQueryLikelihood     
 7   Q0   CACM-0983 2   -2.7516874877685713   smoothedQueryLikelihood     
 7   Q0   CACM-0066 3   -2.79277665852899   smoothedQueryLikelihood     
@@ -713,7 +713,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 7   Q0   CACM-0230 99   -3.2457411907920153   smoothedQueryLikelihood     
 7   Q0   CACM-0475 100   -3.2457411907920153   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 8   Q0   CACM-1085 1   -2.7085414091277253   smoothedQueryLikelihood     
 8   Q0   CACM-0983 2   -2.7516874877685713   smoothedQueryLikelihood     
 8   Q0   CACM-0066 3   -2.79277665852899   smoothedQueryLikelihood     
@@ -815,7 +815,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 8   Q0   CACM-1395 99   -3.353501423310021   smoothedQueryLikelihood     
 8   Q0   CACM-3046 100   -3.353501423310021   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 9   Q0   CACM-0371 1   -2.5037692191538   smoothedQueryLikelihood     
 9   Q0   CACM-2756 2   -2.6112477085199033   smoothedQueryLikelihood     
 9   Q0   CACM-2607 3   -2.6638504074279004   smoothedQueryLikelihood     
@@ -917,7 +917,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 9   Q0   CACM-0365 99   -3.277337763575434   smoothedQueryLikelihood     
 9   Q0   CACM-0660 100   -3.277337763575434   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 10   Q0   CACM-1444 1   -2.663136603951156   smoothedQueryLikelihood     
 10   Q0   CACM-1085 2   -2.7085414091277253   smoothedQueryLikelihood     
 10   Q0   CACM-0983 3   -2.7516874877685713   smoothedQueryLikelihood     
@@ -1019,7 +1019,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 10   Q0   CACM-0120 99   -3.3331216270832407   smoothedQueryLikelihood     
 10   Q0   CACM-0134 100   -3.3331216270832407   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 11   Q0   CACM-0249 1   -2.8212877165958936   smoothedQueryLikelihood     
 11   Q0   CACM-2603 2   -3.0485787890995963   smoothedQueryLikelihood     
 11   Q0   CACM-1466 3   -3.1287686849711225   smoothedQueryLikelihood     
@@ -1121,7 +1121,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 11   Q0   CACM-0111 99   -4.8591098388868   smoothedQueryLikelihood     
 11   Q0   CACM-1463 100   -4.87167153839018   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 12   Q0   CACM-2345 1   -3.1254836479923696   smoothedQueryLikelihood     
 12   Q0   CACM-2311 2   -3.1403803573477775   smoothedQueryLikelihood     
 12   Q0   CACM-2407 3   -3.2135109316656374   smoothedQueryLikelihood     
@@ -1223,7 +1223,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 12   Q0   CACM-2165 99   -4.177013804508347   smoothedQueryLikelihood     
 12   Q0   CACM-3089 100   -4.177013804508347   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 13   Q0   CACM-1444 1   -2.663136603951156   smoothedQueryLikelihood     
 13   Q0   CACM-1085 2   -2.7085414091277253   smoothedQueryLikelihood     
 13   Q0   CACM-0983 3   -2.7516874877685713   smoothedQueryLikelihood     
@@ -1325,7 +1325,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 13   Q0   CACM-0192 99   -3.3331216270832407   smoothedQueryLikelihood     
 13   Q0   CACM-0275 100   -3.3331216270832407   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 14   Q0   CACM-1085 1   -2.7085414091277253   smoothedQueryLikelihood     
 14   Q0   CACM-0983 2   -2.7516874877685713   smoothedQueryLikelihood     
 14   Q0   CACM-2348 3   -2.7808584862061547   smoothedQueryLikelihood     
@@ -1427,7 +1427,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 14   Q0   CACM-0488 99   -3.37335013609887   smoothedQueryLikelihood     
 14   Q0   CACM-0530 100   -3.37335013609887   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 15   Q0   CACM-0392 1   -2.705880726640661   smoothedQueryLikelihood     
 15   Q0   CACM-1016 2   -2.746856637432611   smoothedQueryLikelihood     
 15   Q0   CACM-0168 3   -2.7978187178593785   smoothedQueryLikelihood     
@@ -1529,7 +1529,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 15   Q0   CACM-1330 99   -3.3722760068566364   smoothedQueryLikelihood     
 15   Q0   CACM-0358 100   -3.3761943755613775   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 16   Q0   CACM-2875 1   -2.263535357564635   smoothedQueryLikelihood     
 16   Q0   CACM-2291 2   -2.327129766068532   smoothedQueryLikelihood     
 16   Q0   CACM-0447 3   -2.4995067785660634   smoothedQueryLikelihood     
@@ -1631,7 +1631,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 16   Q0   CACM-0337 99   -3.038327331214212   smoothedQueryLikelihood     
 16   Q0   CACM-0381 100   -3.038327331214212   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 17   Q0   CACM-2875 1   -2.263535357564635   smoothedQueryLikelihood     
 17   Q0   CACM-2291 2   -2.327129766068532   smoothedQueryLikelihood     
 17   Q0   CACM-1473 3   -2.4847390734075536   smoothedQueryLikelihood     
@@ -1733,7 +1733,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 17   Q0   CACM-3056 99   -2.963824606316063   smoothedQueryLikelihood     
 17   Q0   CACM-1483 100   -2.978928270939491   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 18   Q0   CACM-0371 1   -2.5037692191538   smoothedQueryLikelihood     
 18   Q0   CACM-2756 2   -2.6112477085199033   smoothedQueryLikelihood     
 18   Q0   CACM-1444 3   -2.663136603951156   smoothedQueryLikelihood     
@@ -1835,7 +1835,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 18   Q0   CACM-0910 99   -3.2457411907920153   smoothedQueryLikelihood     
 18   Q0   CACM-1058 100   -3.2457411907920153   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 19   Q0   CACM-0371 1   -2.984612505146865   smoothedQueryLikelihood     
 19   Q0   CACM-2007 2   -3.057870210241228   smoothedQueryLikelihood     
 19   Q0   CACM-1660 3   -3.189703234540555   smoothedQueryLikelihood     
@@ -1937,7 +1937,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 19   Q0   CACM-3044 99   -4.506718931414526   smoothedQueryLikelihood     
 19   Q0   CACM-2175 100   -4.5121577827878125   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 20   Q0   CACM-1963 1   -2.548812584667998   smoothedQueryLikelihood     
 20   Q0   CACM-1266 2   -2.7385978490538463   smoothedQueryLikelihood     
 20   Q0   CACM-2172 3   -2.869785590641679   smoothedQueryLikelihood     
@@ -2039,7 +2039,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 20   Q0   CACM-2442 99   -3.374307124597659   smoothedQueryLikelihood     
 20   Q0   CACM-1354 100   -3.3790794776217608   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 21   Q0   CACM-2756 1   -2.6112477085199033   smoothedQueryLikelihood     
 21   Q0   CACM-2607 2   -2.6638504074279004   smoothedQueryLikelihood     
 21   Q0   CACM-1016 3   -2.746856637432611   smoothedQueryLikelihood     
@@ -2141,7 +2141,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 21   Q0   CACM-1252 99   -3.2453634846561834   smoothedQueryLikelihood     
 21   Q0   CACM-0040 100   -3.2462716422881863   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 22   Q0   CACM-1621 1   -0.4281920922804882   smoothedQueryLikelihood     
 22   Q0   CACM-0296 2   -2.322080403894324   smoothedQueryLikelihood     
 22   Q0   CACM-1068 3   -2.4545298446446617   smoothedQueryLikelihood     
@@ -2243,7 +2243,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 22   Q0   CACM-0863 99   -3.1054053610561025   smoothedQueryLikelihood     
 22   Q0   CACM-1125 100   -3.1054053610561025   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 23   Q0   CACM-2607 1   -2.6638504074279004   smoothedQueryLikelihood     
 23   Q0   CACM-1016 2   -2.746856637432611   smoothedQueryLikelihood     
 23   Q0   CACM-0168 3   -2.7978187178593785   smoothedQueryLikelihood     
@@ -2345,7 +2345,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 23   Q0   CACM-3144 99   -3.2371369327426005   smoothedQueryLikelihood     
 23   Q0   CACM-1252 100   -3.2453634846561834   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 24   Q0   CACM-3043 1   -3.21626403719667   smoothedQueryLikelihood     
 24   Q0   CACM-0412 2   -3.315842818677579   smoothedQueryLikelihood     
 24   Q0   CACM-0268 3   -3.4257814725636484   smoothedQueryLikelihood     
@@ -2447,7 +2447,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 24   Q0   CACM-1435 99   -5.246524089717114   smoothedQueryLikelihood     
 24   Q0   CACM-1948 100   -5.252166600753925   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 25   Q0   CACM-1621 1   -0.4281920922804882   smoothedQueryLikelihood     
 25   Q0   CACM-2291 2   -2.327129766068532   smoothedQueryLikelihood     
 25   Q0   CACM-0447 3   -2.4995067785660634   smoothedQueryLikelihood     
@@ -2549,7 +2549,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 25   Q0   CACM-0737 99   -2.9994280310583634   smoothedQueryLikelihood     
 25   Q0   CACM-0757 100   -2.9994280310583634   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 26   Q0   CACM-1922 1   -2.944408225823209   smoothedQueryLikelihood     
 26   Q0   CACM-3195 2   -2.9647145021598025   smoothedQueryLikelihood     
 26   Q0   CACM-0174 3   -2.9962482761090152   smoothedQueryLikelihood     
@@ -2651,7 +2651,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 26   Q0   CACM-0277 99   -3.361244008139429   smoothedQueryLikelihood     
 26   Q0   CACM-0331 100   -3.361244008139429   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 27   Q0   CACM-2875 1   -2.263535357564635   smoothedQueryLikelihood     
 27   Q0   CACM-0070 2   -2.323158263636383   smoothedQueryLikelihood     
 27   Q0   CACM-2291 3   -2.327129766068532   smoothedQueryLikelihood     
@@ -2753,7 +2753,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 27   Q0   CACM-2916 99   -2.77789309615468   smoothedQueryLikelihood     
 27   Q0   CACM-0248 100   -2.7788692454510504   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 28   Q0   CACM-0189 1   -0.8117079833347304   smoothedQueryLikelihood     
 28   Q0   CACM-2778 2   -2.4995067785660634   smoothedQueryLikelihood     
 28   Q0   CACM-1219 3   -2.6201031836495665   smoothedQueryLikelihood     
@@ -2855,7 +2855,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 28   Q0   CACM-0859 99   -3.1054053610561025   smoothedQueryLikelihood     
 28   Q0   CACM-0863 100   -3.1054053610561025   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 29   Q0   CACM-2694 1   -2.5486790925460414   smoothedQueryLikelihood     
 29   Q0   CACM-2756 2   -2.6112477085199033   smoothedQueryLikelihood     
 29   Q0   CACM-2087 3   -2.6184950028710263   smoothedQueryLikelihood     
@@ -2957,7 +2957,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 29   Q0   CACM-0454 99   -3.2371369327426005   smoothedQueryLikelihood     
 29   Q0   CACM-0786 100   -3.2371369327426005   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 30   Q0   CACM-0392 1   -2.705880726640661   smoothedQueryLikelihood     
 30   Q0   CACM-0087 2   -2.9222689107198323   smoothedQueryLikelihood     
 30   Q0   CACM-2068 3   -2.9601440094114047   smoothedQueryLikelihood     
@@ -3059,7 +3059,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 30   Q0   CACM-3139 99   -3.422537956827573   smoothedQueryLikelihood     
 30   Q0   CACM-1998 100   -3.431131742333061   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 31   Q0   CACM-0189 1   -1.2175619750020956   smoothedQueryLikelihood     
 31   Q0   CACM-2778 2   -2.4995067785660634   smoothedQueryLikelihood     
 31   Q0   CACM-1136 3   -2.5821772576547786   smoothedQueryLikelihood     
@@ -3161,7 +3161,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 31   Q0   CACM-0076 99   -3.1407604362558126   smoothedQueryLikelihood     
 31   Q0   CACM-0226 100   -3.1407604362558126   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 32   Q0   CACM-0189 1   -1.2175619750020956   smoothedQueryLikelihood     
 32   Q0   CACM-2199 2   -2.372335355174634   smoothedQueryLikelihood     
 32   Q0   CACM-2506 3   -2.372335355174634   smoothedQueryLikelihood     
@@ -3263,7 +3263,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 32   Q0   CACM-0870 99   -3.0746793370534475   smoothedQueryLikelihood     
 32   Q0   CACM-0966 100   -3.0746793370534475   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 33   Q0   CACM-0189 1   -2.029269958336826   smoothedQueryLikelihood     
 33   Q0   CACM-1068 2   -2.4545298446446617   smoothedQueryLikelihood     
 33   Q0   CACM-1242 3   -2.5529195083164704   smoothedQueryLikelihood     
@@ -3365,7 +3365,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 33   Q0   CACM-0003 99   -3.3236259264761348   smoothedQueryLikelihood     
 33   Q0   CACM-1005 100   -3.3236259264761348   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 34   Q0   CACM-0262 1   -2.5644164679292487   smoothedQueryLikelihood     
 34   Q0   CACM-0052 2   -3.0597068659593845   smoothedQueryLikelihood     
 34   Q0   CACM-0206 3   -3.0840910235738885   smoothedQueryLikelihood     
@@ -3467,7 +3467,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 34   Q0   CACM-2462 99   -3.364657506612213   smoothedQueryLikelihood     
 34   Q0   CACM-0083 100   -3.398975156058763   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 35   Q0   CACM-2875 1   -2.263535357564635   smoothedQueryLikelihood     
 35   Q0   CACM-0199 2   -2.481073846930028   smoothedQueryLikelihood     
 35   Q0   CACM-1473 3   -2.4847390734075536   smoothedQueryLikelihood     
@@ -3569,7 +3569,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 35   Q0   CACM-0052 99   -3.0653172880695188   smoothedQueryLikelihood     
 35   Q0   CACM-0006 100   -3.0746793370534475   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 36   Q0   CACM-0199 1   -2.481073846930028   smoothedQueryLikelihood     
 36   Q0   CACM-1559 2   -2.539904464536752   smoothedQueryLikelihood     
 36   Q0   CACM-2430 3   -2.539904464536752   smoothedQueryLikelihood     
@@ -3671,7 +3671,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 36   Q0   CACM-0521 99   -3.1458961606334435   smoothedQueryLikelihood     
 36   Q0   CACM-0542 100   -3.1458961606334435   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 37   Q0   CACM-0189 1   -2.8409779416715564   smoothedQueryLikelihood     
 37   Q0   CACM-1757 2   -2.8573966179298145   smoothedQueryLikelihood     
 37   Q0   CACM-0190 3   -2.9608060690990885   smoothedQueryLikelihood     
@@ -3773,7 +3773,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 37   Q0   CACM-1244 99   -6.507833593624499   smoothedQueryLikelihood     
 37   Q0   CACM-0183 100   -6.511604787706167   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 38   Q0   CACM-0189 1   -0.8117079833347304   smoothedQueryLikelihood     
 38   Q0   CACM-2875 2   -2.263535357564635   smoothedQueryLikelihood     
 38   Q0   CACM-1219 3   -2.6201031836495665   smoothedQueryLikelihood     
@@ -3875,7 +3875,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 38   Q0   CACM-0920 99   -3.1407604362558126   smoothedQueryLikelihood     
 38   Q0   CACM-1120 100   -3.1407604362558126   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 39   Q0   CACM-1922 1   -2.566160184040123   smoothedQueryLikelihood     
 39   Q0   CACM-1757 2   -2.8573966179298145   smoothedQueryLikelihood     
 39   Q0   CACM-1736 3   -2.8629888175713805   smoothedQueryLikelihood     
@@ -3977,7 +3977,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 39   Q0   CACM-1830 99   -3.8594052279105013   smoothedQueryLikelihood     
 39   Q0   CACM-1073 100   -3.8632195624297947   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 40   Q0   CACM-0189 1   -0.8117079833347304   smoothedQueryLikelihood     
 40   Q0   CACM-0392 2   -2.705880726640661   smoothedQueryLikelihood     
 40   Q0   CACM-1757 3   -2.8573966179298145   smoothedQueryLikelihood     
@@ -4079,7 +4079,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 40   Q0   CACM-1580 99   -3.5143347221747816   smoothedQueryLikelihood     
 40   Q0   CACM-1583 100   -3.5143347221747816   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 41   Q0   CACM-1085 1   -2.7085414091277253   smoothedQueryLikelihood     
 41   Q0   CACM-0983 2   -2.7516874877685713   smoothedQueryLikelihood     
 41   Q0   CACM-0066 3   -2.79277665852899   smoothedQueryLikelihood     
@@ -4181,7 +4181,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 41   Q0   CACM-0370 99   -3.2515186765108606   smoothedQueryLikelihood     
 41   Q0   CACM-0423 100   -3.2515186765108606   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 42   Q0   CACM-1621 1   -0.4281920922804882   smoothedQueryLikelihood     
 42   Q0   CACM-0371 2   -2.5037692191538   smoothedQueryLikelihood     
 42   Q0   CACM-2329 3   -2.5680332623381186   smoothedQueryLikelihood     
@@ -4283,7 +4283,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 42   Q0   CACM-0008 99   -3.277337763575434   smoothedQueryLikelihood     
 42   Q0   CACM-0077 100   -3.277337763575434   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 43   Q0   CACM-1621 1   -0.4281920922804882   smoothedQueryLikelihood     
 43   Q0   CACM-2329 2   -2.5680332623381186   smoothedQueryLikelihood     
 43   Q0   CACM-0093 3   -2.937425472633453   smoothedQueryLikelihood     
@@ -4385,7 +4385,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 43   Q0   CACM-2440 99   -5.507001969570528   smoothedQueryLikelihood     
 43   Q0   CACM-1708 100   -5.524137660165775   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 44   Q0   CACM-1621 1   -0.4281920922804882   smoothedQueryLikelihood     
 44   Q0   CACM-0086 2   -2.2566137354632296   smoothedQueryLikelihood     
 44   Q0   CACM-0059 3   -2.2872800165258034   smoothedQueryLikelihood     
@@ -4487,7 +4487,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 44   Q0   CACM-1147 99   -2.856762957241475   smoothedQueryLikelihood     
 44   Q0   CACM-2155 100   -2.856762957241475   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 45   Q0   CACM-0189 1   -0.4058539916673652   smoothedQueryLikelihood     
 45   Q0   CACM-2778 2   -2.4995067785660634   smoothedQueryLikelihood     
 45   Q0   CACM-0371 3   -2.5037692191538   smoothedQueryLikelihood     
@@ -4589,7 +4589,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 45   Q0   CACM-0806 99   -3.038327331214212   smoothedQueryLikelihood     
 45   Q0   CACM-0935 100   -3.038327331214212   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 46   Q0   CACM-0189 1   -0.4058539916673652   smoothedQueryLikelihood     
 46   Q0   CACM-2875 2   -2.263535357564635   smoothedQueryLikelihood     
 46   Q0   CACM-0391 3   -2.467123542754111   smoothedQueryLikelihood     
@@ -4691,7 +4691,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 46   Q0   CACM-0956 99   -3.038327331214212   smoothedQueryLikelihood     
 46   Q0   CACM-0958 100   -3.038327331214212   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 47   Q0   CACM-0189 1   -0.8117079833347304   smoothedQueryLikelihood     
 47   Q0   CACM-1715 2   -2.5063235988762647   smoothedQueryLikelihood     
 47   Q0   CACM-1814 3   -2.5063235988762647   smoothedQueryLikelihood     
@@ -4793,7 +4793,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 47   Q0   CACM-3019 99   -5.966896556227756   smoothedQueryLikelihood     
 47   Q0   CACM-0374 100   -5.989146461472051   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 48   Q0   CACM-1621 1   -0.4281920922804882   smoothedQueryLikelihood     
 48   Q0   CACM-0189 2   -0.8117079833347304   smoothedQueryLikelihood     
 48   Q0   CACM-0199 3   -2.481073846930028   smoothedQueryLikelihood     
@@ -4895,7 +4895,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 48   Q0   CACM-0508 99   -3.1458961606334435   smoothedQueryLikelihood     
 48   Q0   CACM-0509 100   -3.1458961606334435   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 49   Q0   CACM-0189 1   -0.4058539916673652   smoothedQueryLikelihood     
 49   Q0   CACM-2875 2   -2.263535357564635   smoothedQueryLikelihood     
 49   Q0   CACM-0391 3   -2.467123542754111   smoothedQueryLikelihood     
@@ -4997,7 +4997,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 49   Q0   CACM-0482 99   -3.0178253100073476   smoothedQueryLikelihood     
 49   Q0   CACM-0584 100   -3.0178253100073476   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 50   Q0   CACM-3034 1   -2.9319171051825585   smoothedQueryLikelihood     
 50   Q0   CACM-3195 2   -2.9647145021598025   smoothedQueryLikelihood     
 50   Q0   CACM-0174 3   -2.9962482761090152   smoothedQueryLikelihood     
@@ -5099,7 +5099,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 50   Q0   CACM-1353 99   -3.3482268155424033   smoothedQueryLikelihood     
 50   Q0   CACM-2932 100   -3.3482268155424033   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 51   Q0   CACM-2022 1   -2.548793513273797   smoothedQueryLikelihood     
 51   Q0   CACM-2085 2   -2.5879242143560286   smoothedQueryLikelihood     
 51   Q0   CACM-2756 3   -2.6112477085199033   smoothedQueryLikelihood     
@@ -5201,7 +5201,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 51   Q0   CACM-1611 99   -3.2371369327426005   smoothedQueryLikelihood     
 51   Q0   CACM-2271 100   -3.2371369327426005   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 52   Q0   CACM-0371 1   -2.5037692191538   smoothedQueryLikelihood     
 52   Q0   CACM-2756 2   -2.6112477085199033   smoothedQueryLikelihood     
 52   Q0   CACM-2607 3   -2.6638504074279004   smoothedQueryLikelihood     
@@ -5303,7 +5303,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 52   Q0   CACM-0077 99   -3.277337763575434   smoothedQueryLikelihood     
 52   Q0   CACM-0133 100   -3.277337763575434   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 53   Q0   CACM-0047 1   -2.367757827092101   smoothedQueryLikelihood     
 53   Q0   CACM-2506 2   -2.372335355174634   smoothedQueryLikelihood     
 53   Q0   CACM-1882 3   -2.400382004745533   smoothedQueryLikelihood     
@@ -5405,7 +5405,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 53   Q0   CACM-1202 99   -3.2983376901993458   smoothedQueryLikelihood     
 53   Q0   CACM-1229 100   -3.2983376901993458   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 54   Q0   CACM-0296 1   -2.322080403894324   smoothedQueryLikelihood     
 54   Q0   CACM-1137 2   -2.4003855277888784   smoothedQueryLikelihood     
 54   Q0   CACM-1068 3   -2.4545298446446617   smoothedQueryLikelihood     
@@ -5507,7 +5507,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 54   Q0   CACM-2237 99   -3.126863081728179   smoothedQueryLikelihood     
 54   Q0   CACM-1466 100   -3.1287686849711225   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 55   Q0   CACM-0086 1   -2.2566137354632296   smoothedQueryLikelihood     
 55   Q0   CACM-2875 2   -2.263535357564635   smoothedQueryLikelihood     
 55   Q0   CACM-0059 3   -2.2872800165258034   smoothedQueryLikelihood     
@@ -5609,7 +5609,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 55   Q0   CACM-0868 99   -2.811196278978879   smoothedQueryLikelihood     
 55   Q0   CACM-0897 100   -2.811196278978879   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 56   Q0   CACM-0189 1   -0.8117079833347304   smoothedQueryLikelihood     
 56   Q0   CACM-1660 2   -3.074882874573111   smoothedQueryLikelihood     
 56   Q0   CACM-1952 3   -3.074882874573111   smoothedQueryLikelihood     
@@ -5711,7 +5711,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 56   Q0   CACM-0283 99   -5.915342304294994   smoothedQueryLikelihood     
 56   Q0   CACM-0315 100   -5.915342304294994   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 57   Q0   CACM-0189 1   -0.4058539916673652   smoothedQueryLikelihood     
 57   Q0   CACM-0190 2   -5.809083211214527   smoothedQueryLikelihood     
 57   Q0   CACM-0217 3   -5.809083211214527   smoothedQueryLikelihood     
@@ -5813,7 +5813,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 57   Q0   CACM-1094 99   -6.184535119695774   smoothedQueryLikelihood     
 57   Q0   CACM-1123 100   -6.184535119695774   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 58   Q0   CACM-2291 1   -2.327129766068532   smoothedQueryLikelihood     
 58   Q0   CACM-0447 2   -2.4995067785660634   smoothedQueryLikelihood     
 58   Q0   CACM-2778 3   -2.4995067785660634   smoothedQueryLikelihood     
@@ -5915,7 +5915,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 58   Q0   CACM-0911 99   -3.038327331214212   smoothedQueryLikelihood     
 58   Q0   CACM-0935 100   -3.038327331214212   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 59   Q0   CACM-2291 1   -2.327129766068532   smoothedQueryLikelihood     
 59   Q0   CACM-0447 2   -2.4995067785660634   smoothedQueryLikelihood     
 59   Q0   CACM-2778 3   -2.4995067785660634   smoothedQueryLikelihood     
@@ -6017,7 +6017,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 59   Q0   CACM-0426 99   -3.038327331214212   smoothedQueryLikelihood     
 59   Q0   CACM-0444 100   -3.038327331214212   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 60   Q0   CACM-1246 1   -2.49735279565988   smoothedQueryLikelihood     
 60   Q0   CACM-0371 2   -2.5037692191538   smoothedQueryLikelihood     
 60   Q0   CACM-0139 3   -2.5571784132303854   smoothedQueryLikelihood     
@@ -6119,7 +6119,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 60   Q0   CACM-0786 99   -3.2371369327426005   smoothedQueryLikelihood     
 60   Q0   CACM-0896 100   -3.2371369327426005   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 61   Q0   CACM-0189 1   -0.4058539916673652   smoothedQueryLikelihood     
 61   Q0   CACM-2875 2   -2.263535357564635   smoothedQueryLikelihood     
 61   Q0   CACM-0391 3   -2.467123542754111   smoothedQueryLikelihood     
@@ -6221,7 +6221,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 61   Q0   CACM-2647 99   -3.019214286736072   smoothedQueryLikelihood     
 61   Q0   CACM-0131 100   -3.038327331214212   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 62   Q0   CACM-0371 1   -2.5037692191538   smoothedQueryLikelihood     
 62   Q0   CACM-2756 2   -2.6112477085199033   smoothedQueryLikelihood     
 62   Q0   CACM-1444 3   -2.663136603951156   smoothedQueryLikelihood     
@@ -6323,7 +6323,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 62   Q0   CACM-0230 99   -3.2457411907920153   smoothedQueryLikelihood     
 62   Q0   CACM-0270 100   -3.2457411907920153   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 63   Q0   CACM-1444 1   -2.663136603951156   smoothedQueryLikelihood     
 63   Q0   CACM-1085 2   -2.7085414091277253   smoothedQueryLikelihood     
 63   Q0   CACM-0983 3   -2.7516874877685713   smoothedQueryLikelihood     
@@ -6425,7 +6425,7 @@ query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
 63   Q0   CACM-0530 99   -3.37335013609887   smoothedQueryLikelihood     
 63   Q0   CACM-0748 100   -3.37335013609887   smoothedQueryLikelihood     
 
-query_id   Q0   doc_id   rank   smoothedQueryLikelihood   system_name
+query_id   Q0   doc_id   rank   score   system_name
 64   Q0   CACM-2607 1   -2.6638504074279004   smoothedQueryLikelihood     
 64   Q0   CACM-0392 2   -2.705880726640661   smoothedQueryLikelihood     
 64   Q0   CACM-1016 3   -2.746856637432611   smoothedQueryLikelihood     
