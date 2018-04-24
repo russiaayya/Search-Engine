@@ -1,0 +1,5 @@
+INDEXER_PATH = r"Invereted_Indexes"
+LUCENE_INDEX_PATH = r"Index_Lucene"
+RAW_DOCUMENTS_PATH = r"rawDocuments"
+BM25_RANKING_TEXT_FILE = r"bm25_Ranking.txt"
+INPUT_PATH = r"Input"
