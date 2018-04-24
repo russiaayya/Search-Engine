@@ -24,7 +24,6 @@ def generateSnippet():
             queryWords=queries[qid]
             for word in queryWords:
                 if word in stop_Words:
-                    print("continue",word)
                     continue
                 if word in content:
                     print(word)
