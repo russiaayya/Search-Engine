@@ -1,9 +1,10 @@
+def precision_cal(rel_ret_count, retrieved_count):
+    return rel_ret_count / retrieved_count
 
-def precision_cal(rel_ret_count,retrieved_count):
-    return rel_ret_count/retrieved_count
 
-def recall_cal(rel_ret_count,relevant_count):
-    return rel_ret_count/relevant_count
+def recall_cal(rel_ret_count, relevant_count):
+    return rel_ret_count / relevant_count
+
 
 def avg_precision_cal(precision_table, relevant_docs, rel_ret_count):
     if rel_ret_count == 0:
@@ -12,7 +13,8 @@ def avg_precision_cal(precision_table, relevant_docs, rel_ret_count):
     for docID in precision_table:
         if docID in relevant_docs:
             sum += precision_table[docID]
-    return sum/rel_ret_count
+    return sum / rel_ret_count
+
 
 def evaluation(queryRelevanceFile, top100file, recallTableFile):
     relevance_dict = dict()
@@ -34,7 +36,7 @@ def evaluation(queryRelevanceFile, top100file, recallTableFile):
             precision_table = dict()
             recall_table = dict()
             rel_docs_ranks_RR = []
-            newFile.write("Query ID: "+str(q_id) + "\n")
+            newFile.write("Query ID: " + str(q_id) + "\n")
             newFile.write("Rank   Relevance   Precision       Recall\n")
             rel_ret_count = 0
             retrieved_count = 0
@@ -62,18 +64,18 @@ def evaluation(queryRelevanceFile, top100file, recallTableFile):
             newFile.write("\n")
             MAP_numerator += avg_precision_cal(precision_table, relevance_dict[q_id], rel_ret_count)
             if rel_docs_ranks_RR:
-                RR = 1/rel_docs_ranks_RR[0]
+                RR = 1 / rel_docs_ranks_RR[0]
                 MRR_numerator += RR
 
             newFile.write("P@5: " + str(P_at_5) + "\n")
             newFile.write("P@20: " + str(P_at_20) + "\n")
             newFile.write("\n")
-            newFile.write("******************* End of query "+str(q_id)+" ***************************")
+            newFile.write("******************* End of query " + str(q_id) + " ***************************")
             newFile.write("\n")
             newFile.write("\n")
 
-    MAP = MAP_numerator/num_of_queries
-    MRR = MRR_numerator/num_of_queries
+    MAP = MAP_numerator / num_of_queries
+    MRR = MRR_numerator / num_of_queries
 
     newFile.write("MAP: " + str(MAP) + "\n")
     newFile.write("MRR: " + str(MRR) + "\n")
@@ -81,8 +83,6 @@ def evaluation(queryRelevanceFile, top100file, recallTableFile):
     newFile.close()
 
 
-
-
 if __name__ == "__main__":
-    evaluation("queryRelevance.txt","bm25_Ranking_TOP100_retrieved.txt","bm25_precision_recall_table.txt")
+    evaluation("queryRelevance.txt", "bm25_Ranking_TOP100_retrieved.txt", "bm25_precision_recall_table.txt")
     evaluation("queryRelevance.txt", "bm25_Ranking_TOP100_retrieved.txt", "bm25_precision_recall_table.txt")
