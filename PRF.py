@@ -7,9 +7,8 @@ tokenized_dir = "tokenized_Files"
 # do required stopping to remove high frequent stop words
 
 
-def pseudoRelevance(queryId, numExpandedQueryTerms, queries):
+def pseudoRelevance(queryId, numExpandedQueryTerms, queries,expPseudoRel_queries):
     kExpandedQueryTerms = []
-    expPseudoRel_queries = {}
     docScore = createTfRelevanceDocs(getTopK_Results(queryId))
     revTerms = sorted(docScore, key=docScore.get,reverse=True) #list of high frequency non-stopped terms in the selected top k docs
     queryTerms = queries[queryId]
@@ -24,8 +23,11 @@ def pseudoRelevance(queryId, numExpandedQueryTerms, queries):
     print ("queryTerms: ",queryTerms)
     print("expanded terms",kExpandedQueryTerms)
     completeRelevantList=list(queryTerms+kExpandedQueryTerms)
-    expPseudoRel_queries[queryId]=completeRelevantList
-    print (expPseudoRel_queries)
+    if queryId not in expPseudoRel_queries:
+        expPseudoRel_queries[queryId]=completeRelevantList
+    else:
+        expPseudoRel_queries[queryId].append(completeRelevantList)
+    return expPseudoRel_queries
 
 
 
@@ -42,7 +44,6 @@ def createTfRelevanceDocs(docIds):
         for term in fileList:
             if term in stopWordsList:
                 continue
-
             if term in tfHmRelevanceDocs:
                 tfHmRelevanceDocs[term] = tfHmRelevanceDocs[term] + 1
             else:
@@ -54,7 +55,6 @@ def createTfRelevanceDocs(docIds):
 def getTopK_Results(queryId):
     file_contents = open("bm25_Ranking_PRF.txt", 'r', encoding='utf-8')
     topK_Result = eval(file_contents.read())
-    # topK_Result = file_contents.readlines()
     queryDocIds = topK_Result[queryId]
     topK = []
     for i in range(10):
@@ -68,10 +68,13 @@ if __name__ == "__main__":
     content = open("queries.txt", 'r', encoding='utf-8')
     queries = eval(content.read())
     numQuery = len(queries.keys())
-    # for qId in queries.keys():
-    #     pseudoRelevance(qId, 5,queries)
-
-    pseudoRelevance('1', 5, queries)
+    expPseudoRel_queries = {}
+    for qId in queries.keys():
+        PRFdict=pseudoRelevance(qId, 10,queries,expPseudoRel_queries)
+    filename = "enrichedQueries" + ".txt"
+    newFile = open(filename, 'w', encoding='utf-8')
+    newFile.write(str(PRFdict))
+    newFile.close()
 
 
 

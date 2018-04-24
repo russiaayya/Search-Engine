@@ -10,10 +10,10 @@ def numsOnly(inputString):# function to make sure it contains only the digits an
 
 def generateTokens(dir):
     filelist = os.listdir(os.path.abspath(dir))
-    validTokens = []
     punctuation = string.punctuation.replace("-", "")  # retaining hyphen- question
     nums_punctuation="!\"#$%&'()*+/;<=>?@[\]^_`{|}~"   # removing . , - : for digits
     for f in filelist:
+        validTokens = []
         if len(f) <= 1:
             continue
         full_path=dir+"//"+f
@@ -48,7 +48,6 @@ def generateTokens(dir):
         filename = r"tokenized_Files/" + f + ".txt"
         newFile = open(filename, 'w', encoding='utf-8')
         newFile.write(str(validTokens))
-        validTokens = []
         newFile.close()
 
 def rindex(mylist, myvalue):

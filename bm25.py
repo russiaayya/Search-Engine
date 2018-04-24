@@ -1,5 +1,5 @@
 import math
-def generateranking():
+def generateranking(enrichmentFlag):
     #Emperical values for BM25
     k1=1.2
     k2=100
@@ -13,8 +13,12 @@ def generateranking():
     score=0
     file_contents = open("unigram_index.txt", 'r', encoding='utf-8')
     unigrams = eval(file_contents.read())
-    file_contents = open("queries.txt", 'r', encoding='utf-8')
-    queries = eval(file_contents.read())
+    if enrichmentFlag:
+        file_contents = open("enrichedQueries.txt", 'r', encoding='utf-8')
+        queries = eval(file_contents.read())
+    else:
+        file_contents = open("queries.txt", 'r', encoding='utf-8')
+        queries = eval(file_contents.read())
     file_contents = open("doc-termCount.txt", 'r', encoding='utf-8')
     documentLen = eval(file_contents.read())
     totalCount=0
@@ -43,17 +47,20 @@ def generateranking():
                         else:
                             docScore[docID]+=score
             revSortedDocScore = sorted(docScore, key=docScore.get, reverse=True)# sorting in descending order
-
-            for index,token in enumerate(revSortedDocScore):
-                index+=1
-                if qid not in prfqueries:
-                    prfqueries[qid]=[token]
-                else:
-                    prfqueries[qid].append(token)
-                if index==100:#For getting only top 100
-                    break
+            if not queryEnrichment:
+                for index,token in enumerate(revSortedDocScore):
+                    index+=1
+                    if qid not in prfqueries:
+                        prfqueries[qid]=[token]
+                    else:
+                        prfqueries[qid].append(token)
+                    if index==100:#For getting only top 100
+                        break
             if flag==0:
-                filename = "bm25_Ranking" + ".txt"
+                if queryEnrichment:
+                    filename = "bm25_Ranking_EnrichedQuery" + ".txt"
+                else:
+                    filename = "bm25_Ranking" + ".txt"
                 newFile = open(filename, 'w', encoding='utf-8')
                 flag=1
             newFile.write("\n")
@@ -71,8 +78,12 @@ def generateranking():
                     break
             docScore={}
     newFile.close()
-    filenamePRF = "bm25_Ranking_PRF" + ".txt"
-    newFilePRF = open(filenamePRF, 'w', encoding='utf-8')
-    newFilePRF.write(str(prfqueries))
+    if not queryEnrichment:
+        filenamePRF = "bm25_Ranking_PRF" + ".txt"
+        newFilePRF = open(filenamePRF, 'w', encoding='utf-8')
+        newFilePRF.write(str(prfqueries))
 if __name__ == "__main__":
-    generateranking()
+    queryEnrichment=True
+    generateranking(queryEnrichment)
+    queryEnrichment=False
+    generateranking(queryEnrichment)
