@@ -1,9 +1,10 @@
 import os
 
-
+# function that generates index by removing stop words
 def generateStopIndex():
     fullPath = r'..\tokenized_Files'
     FilesName = os.listdir(os.path.abspath(fullPath))
+    # create a list of stop words from the given input file
     stop_words = []
     for stopW in open(r'Input\common_words.txt'):
         stop_words.append(stopW.strip())
