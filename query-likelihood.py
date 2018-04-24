@@ -13,7 +13,7 @@ def generateranking():
     C = 0
     for value in documentLen.values():
         C += value
-
+    snippetQueryDocs={}
     for qid,q in queries.items():
             for word in q:
                 if word in unigrams.keys():
@@ -29,6 +29,14 @@ def generateranking():
                         else:
                             docScore[docID] += score
             revSortedDocScore = sorted(docScore, key=docScore.get, reverse=True)# sorting in descending order
+            for index, token in enumerate(revSortedDocScore):
+                index += 1
+                if qid not in snippetQueryDocs:
+                    snippetQueryDocs[qid] = [token]
+                else:
+                    snippetQueryDocs[qid].append(token)
+                if index == 100:  # For getting only top 100
+                    break
             if flag==0:
                 filename = "Query-likelihood-ranking" + ".txt"
                 newFile = open(filename, 'w', encoding='utf-8')
@@ -48,6 +56,8 @@ def generateranking():
                     break
             docScore={}
     newFile.close()
-
+    filenameSnippet = "snippetQueryDocsDictionary" + ".txt"
+    newFileSnippet= open(filenameSnippet, 'w', encoding='utf-8')
+    newFileSnippet.write(str(snippetQueryDocs))
 if __name__ == "__main__":
     generateranking()
