@@ -28,7 +28,7 @@ def generateTokens(dir):
         if "PM" in contents:
             lastIndex=rindex(contents,"PM")
         for t in contents:
-            if contents.index(t)==lastIndex:
+            if contents.index(t)==lastIndex+1:
                 break
             if numsOnly(t):
                 for digit in t:
