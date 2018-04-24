@@ -7,7 +7,7 @@ def generateSnippet():
     queryRanks = eval(file_contents.read())
     file_contents.close()
     file_contents = open("common_words.txt", 'r', encoding='utf-8')
-    stop_Words = file_contents.readline()
+    stop_Words = file_contents.read()
     file_contents.close()
     snippet_html=open("snippetGeneration.html",'w',encoding='utf-8')
     snippet_html.write("<!DOCTYPE html>")
@@ -46,15 +46,27 @@ def generateSnippet():
             revSignificance=revSignificance[:3]
             finalSnippet=[]
             for relSentence in revSignificance:
+                finalSnippet.append("...")
                 for word in relSentence.split():
-                    if word in queryWords:
+                    if (word in queryWords) and (word not in stop_Words):
                         word="<b>"+word+"</b>"
                         finalSnippet.append(word)
                     else:
                         finalSnippet.append(word)
-            snippet_html.write("The query is:\n")
+                finalSnippet.append("...")
             snippet_html.write("<p>")
+            snippet_html.write("<i>The query id is:</i>")
+            snippet_html.write(qid)
+            snippet_html.write("</p>")
+            snippet_html.write("<p>")
+            snippet_html.write("<u>Query:\t</u>")
+            snippet_html.write("<font color = \"blue\">")
             snippet_html.write(" ".join(queryWords))
+            snippet_html.write("</font>")
+            snippet_html.write("</p>")
+            snippet_html.write("<p>")
+            snippet_html.write("<i>The document is:\n</i>")
+            snippet_html.write(doc)
             snippet_html.write("</p>")
             snippet_html.write("<p>")
             snippet_html.write(" ".join(finalSnippet))
