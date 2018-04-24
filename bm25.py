@@ -18,6 +18,7 @@ def generateranking(enrichmentFlag):
         queries = eval(file_contents.read())
     else:
         file_contents = open("queries.txt", 'r', encoding='utf-8')
+        # file_contents = open("SEG_queries.txt", 'r', encoding='utf-8')
         queries = eval(file_contents.read())
     file_contents = open("doc-termCount.txt", 'r', encoding='utf-8')
     documentLen = eval(file_contents.read())
@@ -65,6 +66,9 @@ def generateranking(enrichmentFlag):
                 else:
                     filename = "bm25_Ranking" + ".txt"
                     systemName = "   BM_25   "
+                    # filename = "bm25_Ranking_SEG_Queries" + ".txt"
+                    # systemName = "   bm25_using_SEG_model   "
+
                 newFile = open(filename, 'w', encoding='utf-8')
                 flag=1
             newFile.write("\n")
@@ -91,6 +95,8 @@ def generateranking(enrichmentFlag):
     newFile = open(filename, 'w', encoding='utf-8')
     newFile.write(str(retrieved_docs))
     newFile.close()
+
+
 if __name__ == "__main__":
     queryEnrichment=True
     generateranking(queryEnrichment)

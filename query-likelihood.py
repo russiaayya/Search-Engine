@@ -14,6 +14,7 @@ def generateranking():
     for value in documentLen.values():
         C += value
     snippetQueryDocs={}
+    retrieved_docs = {}
     for qid,q in queries.items():
             for word in q:
                 if word in unigrams.keys():
@@ -32,6 +33,7 @@ def generateranking():
                         else:
                             docScore[docID] += score
             revSortedDocScore = sorted(docScore, key=docScore.get ,reverse=True)# sorting in descending order
+            retrieved_docs[qid] = revSortedDocScore[:100]
             for index, token in enumerate(revSortedDocScore):
                 index += 1
                 if qid not in snippetQueryDocs:
@@ -62,5 +64,14 @@ def generateranking():
     filenameSnippet = "snippetQueryDocsDictionary" + ".txt"
     newFileSnippet= open(filenameSnippet, 'w', encoding='utf-8')
     newFileSnippet.write(str(snippetQueryDocs))
+    filename = "QLM_Ranking_TOP100_retrieved" + ".txt"
+    newFile = open(filename, 'w', encoding='utf-8')
+    newFile.write(str(retrieved_docs))
+    newFile.close()
+
+
+
+
+
 if __name__ == "__main__":
     generateranking()
