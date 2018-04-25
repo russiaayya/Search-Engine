@@ -37,7 +37,7 @@ def evaluation(queryRelevanceFile, top100file, recallTableFile):
             recall_table = dict()
             rel_docs_ranks_RR = []
             newFile.write("Query ID: " + str(q_id) + "\n")
-            newFile.write("Rank   Relevance   Precision       Recall\n")
+            newFile.write("Rank      docID       Relevance    Precision       Recall\n")
             rel_ret_count = 0
             retrieved_count = 0
             retrieved_docs = top_100_dict[q_id]
@@ -56,7 +56,8 @@ def evaluation(queryRelevanceFile, top100file, recallTableFile):
                     P_at_5 = precision
                 if retrieved_count == 20:
                     P_at_20 = precision
-                newFile.write(str(retrieved_count) + "         ")
+                newFile.write(str(retrieved_count) + "       ")
+                newFile.write(str(docID) + "         ")
                 newFile.write(relevance + "         ")
                 newFile.write(str(format(precision, '.4f')) + "         ")
                 newFile.write(str(format(recall, '.4f')))
@@ -85,4 +86,5 @@ def evaluation(queryRelevanceFile, top100file, recallTableFile):
 
 if __name__ == "__main__":
     evaluation("queryRelevance.txt", "bm25_Ranking_TOP100_retrieved.txt", "bm25_precision_recall_table.txt")
-    evaluation("queryRelevance.txt", "bm25_Ranking_TOP100_retrieved.txt", "bm25_precision_recall_table.txt")
+    evaluation("queryRelevance.txt", "QLM_Ranking_TOP100_retrieved.txt", "QLM_precision_recall_table.txt")
+    evaluation("queryRelevance.txt", "tfidf_TOP100_retrieved.txt", "tfidf_precision_recall_table.txt")
