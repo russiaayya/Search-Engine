@@ -1,5 +1,5 @@
 from difflib import get_close_matches
-
+from autocorrect import spell
 def getSoftMatchingQueryTerm(word,corpus,unigrams):
     listOfCorrections=get_close_matches(word, corpus)
     bestMatch=""
@@ -35,14 +35,17 @@ if __name__ == "__main__":
         for word in queries[qid]:
             if word in stop_Words:
                 continue
-            print("Original word:",word)
+            #print("Original word:",word)
             correctWord = ""
             if word not in corpus:
                 correctWord=getSoftMatchingQueryTerm(word,corpus,unigrams)
             if correctWord=="" or correctWord is None:
                 correctWord=word
-            print("Corrected word:",correctWord)
+            #print("Corrected word:",correctWord)
             if correctWord not in corpus:
                 count+=1
-                print("not corrected for ",correctWord)
+                #print("not corrected for ",correctWord)
+                if spell(correctWord) in corpus:
+                    count-=1
+                    print("Autocorrected word is",(correctWord,spell(correctWord)))
     print(count)
