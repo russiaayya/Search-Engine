@@ -50,5 +50,5 @@ if __name__ == "__main__":
     fullPath = input("Enter the absolute path to the folder having tokenized files")
     type(fullPath)
     #D:\Search-Engine\tokenized_files
-    generateIndex(fullPath,1)# unigram
-    generateIndex(fullPath,2)#bigram for corelated terms for extra credit
+    generateIndex(fullPath,"1")# unigram
+    generateIndex(fullPath,"2")#bigram for corelated terms for extra credit
