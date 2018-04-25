@@ -6,7 +6,7 @@ def getSoftMatchingQueryTerm(index,word,query,corpus,unigrams,bigrams):
     maxFreq = 0
     for w in listOfCorrections:
         corelation=getCorelation(index,w,query,bigrams)
-        if corelation>0 and w not in stop_Words and abs(len(w)-len(word))<=1:
+        if corelation>0:
             return w
         freq=getFrequency(w,unigrams)
         if freq>maxFreq and w not in stop_Words and abs(len(w)-len(word))<=1:
@@ -63,6 +63,7 @@ if __name__ == "__main__":
                 correctWord=getSoftMatchingQueryTerm(index,word,queries[qid],corpus,unigrams,bigrams)
             else:
                 updatedQList.append(word)
+                continue
             if correctWord=="" or correctWord is None:
                 correctWord=word
             else:
@@ -78,6 +79,7 @@ if __name__ == "__main__":
                 else:
                     updatedQList.append(correctWord)
         correctedQuery[qid]=updatedQList
+    print(count)
     filename = "softMatchingQuery.txt"
     newFile = open(filename, 'w', encoding='utf-8')
     newFile.write(str(correctedQuery))

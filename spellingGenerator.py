@@ -31,7 +31,7 @@ def generatespellingError(word):
     l = len(word)
     word1=list(word)
     #running for three swapping
-    for i in range(3):
+    for i in range(2):
         # using random index
         r1 = randint(1, l - 2)
         r2 = randint(1, l - 2)
