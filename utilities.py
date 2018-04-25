@@ -81,7 +81,8 @@ def processStemmedQueries():
 
 
 def fileToCollection():
-    contents = open("Lucene_Ranking.txt", 'r', encoding='utf-8')
+    # contents = open("Lucene_Ranking.txt", 'r', encoding='utf-8')
+    contents = open("bm25_Ranking_EnrichedQuery.txt", 'r', encoding='utf-8')
     top100 = contents.readlines()
     top100Dict ={}
 
@@ -99,7 +100,7 @@ def fileToCollection():
                 top100Dict[qId].append(docId)
 
     print (top100Dict)
-    filename = "lucene_TOP100_retrieved" + ".txt"
+    filename = "QueryEnriched_TOP100_retrieved" + ".txt"
     newFile = open(filename, 'w', encoding='utf-8')
     newFile.write(str(top100Dict))
     newFile.close()
