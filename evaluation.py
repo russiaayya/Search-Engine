@@ -104,6 +104,9 @@ def evaluation(queryRelevanceFile, top100file, recallTableFile):
 
 
 if __name__ == "__main__":
-    evaluation("queryRelevance.txt", "bm25_Ranking_TOP100_retrieved.txt", "bm25_precision_recall_table.txt")
-    evaluation("queryRelevance.txt", "QLM_Ranking_TOP100_retrieved.txt", "QLM_precision_recall_table.txt")
-    evaluation("queryRelevance.txt", "tfidf_TOP100_retrieved.txt", "tfidf_precision_recall_table.txt")
+    evaluation("queryRelevance.txt", "bm25_Ranking_TOP100_retrieved.txt", "bm25_Evaluation_table.txt")
+    evaluation("queryRelevance.txt", "QLM_Ranking_TOP100_retrieved.txt", "QLM_Evaluation_table.txt")
+    evaluation("queryRelevance.txt", "tfidf_TOP100_retrieved.txt", "tfidf_Evaluation_table.txt")
+    evaluation("queryRelevance.txt", "lucene_TOP100_retrieved.txt", "lucene_Evaluation_table.txt")
+    evaluation("queryRelevance.txt", "QueryEnriched_TOP100_retrieved.txt", "QueryEnriched_Evaluation_table.txt")
+
