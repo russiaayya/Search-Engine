@@ -5,6 +5,7 @@ def generateranking(indexTxt, queriesTxt, docTermCountTxt, rankingTxt, system_na
     # lambda value for Jelinek-Mercer smoothing
     lmd = 0.35
     flag = 0
+    docScore={}
     file_contents = open(indexTxt, 'r', encoding='utf-8')
     unigrams = eval(file_contents.read())
     file_contents = open(queriesTxt, 'r', encoding='utf-8')
@@ -14,6 +15,7 @@ def generateranking(indexTxt, queriesTxt, docTermCountTxt, rankingTxt, system_na
     C = 0
     for value in documentLen.values():
         C += value
+    retrieved_docs={}
     for qid, q in queries.items():
         docScore = {}
         for word in q:
@@ -21,8 +23,11 @@ def generateranking(indexTxt, queriesTxt, docTermCountTxt, rankingTxt, system_na
                 cq = 0
                 for docID in unigrams[word]:
                     cq += unigrams[word][docID]
-                for docID in unigrams[word]:
-                    fi = unigrams[word][docID]
+                for docID in documentLen.keys():
+                    if docID in unigrams[word]:
+                        fi = unigrams[word][docID]
+                    else:
+                        fi = 0
                     dl = documentLen[docID]
                     score = math.log((((1 - lmd) * fi) / dl) + ((lmd * cq) / C))
                     if docID not in docScore:
@@ -30,6 +35,7 @@ def generateranking(indexTxt, queriesTxt, docTermCountTxt, rankingTxt, system_na
                     else:
                         docScore[docID] += score
         revSortedDocScore = sorted(docScore, key=docScore.get, reverse=True)  # sorting in descending order
+        retrieved_docs[qid] = revSortedDocScore[:100]
         if flag == 0:
             filename = rankingTxt + ".txt"
             newFile = open(filename, 'w', encoding='utf-8')
@@ -48,7 +54,10 @@ def generateranking(indexTxt, queriesTxt, docTermCountTxt, rankingTxt, system_na
             if index == 100:  # For getting only top 100
                 break
     newFile.close()
-
+    filename = "QLM_task3_TOP100_retrieved" + ".txt"
+    newFile = open(filename, 'w', encoding='utf-8')
+    newFile.write(str(retrieved_docs))
+    newFile.close()
 
 if __name__ == "__main__":
     # stopping

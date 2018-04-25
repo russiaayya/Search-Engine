@@ -1260,7 +1260,7 @@ june 1960 berezin i s ca600602 jb march 20 1978
 5 188 
 # 189
 the futur of automat digit comput cacm june 1960 booth
-a d ca600601 jb march 20 1978 9 57pm 189
+a d ca600601 jb march 20 1978 9 57 pm 189
 5 189 189 5 189 189 5 189 
 # 190
 bendix g 20 system cacm mai 1960 ca600507 jb march
