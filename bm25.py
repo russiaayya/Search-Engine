@@ -14,8 +14,8 @@ def generateranking(enrichmentFlag):
     file_contents = open("unigram_index.txt", 'r', encoding='utf-8')
     unigrams = eval(file_contents.read())
     if enrichmentFlag:
-        #file_contents = open("enrichedQueries.txt", 'r', encoding='utf-8')
-        file_contents = open("enrichedQueries-top3.txt", 'r', encoding='utf-8')
+        file_contents = open("enrichedQueries.txt", 'r', encoding='utf-8')
+        #file_contents = open("enrichedQueries-top3.txt", 'r', encoding='utf-8')
         queries = eval(file_contents.read())
     else:
         file_contents = open("queries.txt", 'r', encoding='utf-8')
@@ -89,7 +89,7 @@ def generateranking(enrichmentFlag):
     newFile.close()
     if queryEnrichment:
         filenamePRF = "bm25_Ranking_PRF" + ".txt"
-        filenamePRF = "bm25_Ranking_PRF_top3" + ".txt"
+        #filenamePRF = "bm25_Ranking_PRF_top3" + ".txt"
         newFilePRF = open(filenamePRF, 'w', encoding='utf-8')
         newFilePRF.write(str(prfqueries))
         newFilePRF.close()
