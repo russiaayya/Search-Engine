@@ -109,4 +109,7 @@ if __name__ == "__main__":
     evaluation("queryRelevance.txt", "tfidf_TOP100_retrieved.txt", "tfidf_Evaluation_table.txt")
     evaluation("queryRelevance.txt", "lucene_TOP100_retrieved.txt", "lucene_Evaluation_table.txt")
     evaluation("queryRelevance.txt", "QueryEnriched_TOP100_retrieved.txt", "QueryEnriched_Evaluation_table.txt")
+    evaluation("queryRelevance.txt", "BM25_task3_TOP100_retrieved.txt", "BM25_task3_Evaluation_table.txt")
+    evaluation("queryRelevance.txt", "QLM_task3_TOP100_retrieved.txt", "QLM_task3_Evaluation_table.txt")
+    evaluation("queryRelevance.txt", "tfidf_task3_TOP100_retrieved.txt", "tfidf_task3_Evaluation_table.txt")
 
