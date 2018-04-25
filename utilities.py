@@ -78,3 +78,58 @@ def processStemmedQueries():
     outputFile = open(r'queries_stemmed.txt', 'w', encoding='utf8')
     outputFile.write(str(query_dict))
     outputFile.close()
+
+
+def fileToCollection():
+    contents = open("Lucene_Ranking.txt", 'r', encoding='utf-8')
+    top100 = contents.readlines()
+    top100Dict ={}
+
+    for line in top100:
+        if line.strip() == '': continue
+        line = line.strip().split()
+        # print (line)
+        qId = line[0]
+        # print (qId)
+        docId= line[2]
+        if qId !='query_id':
+            if qId not in top100Dict.keys():
+                top100Dict[qId] = [docId]
+            else:
+                top100Dict[qId].append(docId)
+
+    print (top100Dict)
+    filename = "lucene_TOP100_retrieved" + ".txt"
+    newFile = open(filename, 'w', encoding='utf-8')
+    newFile.write(str(top100Dict))
+    newFile.close()
+
+
+
+
+
+
+
+
+
+if __name__ == '__main__':
+    fileToCollection()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
