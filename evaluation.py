@@ -1,11 +1,13 @@
+
+# function to compute precision
 def precision_cal(rel_ret_count, retrieved_count):
     return rel_ret_count / retrieved_count
 
-
+# function to compute recall
 def recall_cal(rel_ret_count, relevant_count):
     return rel_ret_count / relevant_count
 
-
+# function to compute average precision for a query
 def avg_precision_cal(precision_table, relevant_docs, rel_ret_count):
     if rel_ret_count == 0:
         return 0
@@ -15,30 +17,47 @@ def avg_precision_cal(precision_table, relevant_docs, rel_ret_count):
             sum += precision_table[docID]
     return sum / rel_ret_count
 
-
+# function to compute precision, recall, MAP, MRR and P@K
 def evaluation(queryRelevanceFile, top100file, recallTableFile):
+
+    # dictionary to hold query and its list of relevant documents
     relevance_dict = dict()
     file_contents = open(queryRelevanceFile, 'r', encoding='utf-8')
     relevance_dict = eval(file_contents.read())
     file_contents.close()
+
+    # dictionary to hold query and its list of top 100 documents
+    # from one of the retrieval systems
     top_100_dict = dict()
     file_contents = open(top100file, 'r', encoding='utf-8')
     top_100_dict = eval(file_contents.read())
     file_contents.close()
+
+    # number of queries with relevance judgement
     num_of_queries = len(relevance_dict)
 
+    # file that displays the evaluation results
     newFile = open(recallTableFile, 'w', encoding='utf-8')
+
+    # holds the cumulative sum of average precision for each query
     MAP_numerator = 0
+    # holds the cumulative sum of reciprocal rank for each query
     MRR_numerator = 0
 
     for q_id in top_100_dict:
+        # process only if query has relevance judgement
         if q_id in relevance_dict.keys():
+            # dictionary to hold the doc IDs and their precision values
             precision_table = dict()
+            # dictionary to hold the doc IDs and their recall values
             recall_table = dict()
+            # list to hold the relevant retrieved documents
             rel_docs_ranks_RR = []
             newFile.write("Query ID: " + str(q_id) + "\n")
-            newFile.write("Rank      docID       Relevance    Precision       Recall\n")
+            newFile.write("Rank      DocID       Relevance    Precision       Recall\n")
+            # counter to keep track of the relevant retrieved documents
             rel_ret_count = 0
+            # counter to keep track of the rank of the documents
             retrieved_count = 0
             retrieved_docs = top_100_dict[q_id]
             for docID in retrieved_docs:
