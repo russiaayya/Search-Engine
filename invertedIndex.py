@@ -33,10 +33,11 @@ def generateIndex(fullPath,choice):
                 termDoctf[t][file] += 1
         totalTermsInDoc[file] = totalCount
         totalCount=0
-    filename = "doc-termCount" + ".txt"
-    newFile = open(filename, 'w', encoding='utf-8')
-    newFile.write(str(totalTermsInDoc))
-    newFile.close()
+    if choice=="1":
+        filename = "doc-termCount" + ".txt"
+        newFile = open(filename, 'w', encoding='utf-8')
+        newFile.write(str(totalTermsInDoc))
+        newFile.close()
     if choice == "1":
         filename="unigram_index.txt"
     if choice=="2":
