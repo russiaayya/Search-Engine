@@ -112,5 +112,5 @@ if __name__ == "__main__":
     evaluation("queryRelevance.txt", "BM25_task3_TOP100_retrieved.txt", "BM25_task3_Evaluation_table.txt")
     evaluation("queryRelevance.txt", "QLM_task3_TOP100_retrieved.txt", "QLM_task3_Evaluation_table.txt")
     evaluation("queryRelevance.txt", "tfidf_task3_TOP100_retrieved.txt", "tfidf_task3_Evaluation_table.txt")
-    # evaluation("queryRelevance.txt", "bm25_Ranking_PRF.txt", "bm25_PRF_Evaluation_table.txt")
-    evaluation("queryRelevance.txt", "bm25_Ranking_PRF.txt", "bm25_PRF_Evaluation_table_top3.txt")
+    evaluation("queryRelevance.txt", "bm25_Ranking_PRF.txt", "bm25_PRF_Evaluation_table.txt")
+    evaluation("queryRelevance.txt", "bm25_Ranking_PRF_top3.txt", "bm25_PRF_Evaluation_table_top3.txt")
