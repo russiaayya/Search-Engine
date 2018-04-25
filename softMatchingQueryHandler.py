@@ -3,15 +3,20 @@ from autocorrect import spell
 def getSoftMatchingQueryTerm(index,word,query,corpus,unigrams,bigrams):
     listOfCorrections=get_close_matches(word, corpus)
     bestMatch=""
+    bestMatchForcorelation=""
     maxFreq = 0
+    maxCorelation=0
     for w in listOfCorrections:
         corelation=getCorelation(index,w,query,bigrams)
-        if corelation>0 and w not in stop_Words and abs(len(w)-len(word))<=1:
-            return w
+        if corelation>maxCorelation:
+            maxCorelation=corelation
+            bestMatchForcorelation=w
         freq=getFrequency(w,unigrams)
         if freq>maxFreq and w not in stop_Words and abs(len(w)-len(word))<=1:
             maxFreq=freq
             bestMatch=w
+    if maxCorelation>3:
+        return bestMatchForcorelation
     return bestMatch
 
 def getCorelation(index,w,query,bigrams):
@@ -63,6 +68,7 @@ if __name__ == "__main__":
                 correctWord=getSoftMatchingQueryTerm(index,word,queries[qid],corpus,unigrams,bigrams)
             else:
                 updatedQList.append(word)
+                continue
             if correctWord=="" or correctWord is None:
                 correctWord=word
             else:
@@ -78,6 +84,7 @@ if __name__ == "__main__":
                 else:
                     updatedQList.append(correctWord)
         correctedQuery[qid]=updatedQList
+    print(count)
     filename = "softMatchingQuery.txt"
     newFile = open(filename, 'w', encoding='utf-8')
     newFile.write(str(correctedQuery))
