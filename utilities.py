@@ -108,13 +108,8 @@ def fileToCollection():
 
 
 
-
-
-
-
-
-if __name__ == '__main__':
-    fileToCollection()
+# if __name__ == '__main__':
+#     fileToCollection()
 
 
 

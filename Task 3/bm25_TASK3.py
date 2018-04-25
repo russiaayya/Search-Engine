@@ -25,6 +25,7 @@ def generateranking(indexTxt, queriesTxt, docTermCountTxt, rankingTxt, system_na
     averageDl = totalCount / 3204
     flag = 0
     prfqueries = {}
+    retrieved_docs = {}
     for qid, q in queries.items():
         qfi = {}
         for word in q:
@@ -46,6 +47,7 @@ def generateranking(indexTxt, queriesTxt, docTermCountTxt, rankingTxt, system_na
                     else:
                         docScore[docID] += score
         revSortedDocScore = sorted(docScore, key=docScore.get, reverse=True)  # sorting in descending order
+        retrieved_docs[qid] = revSortedDocScore[:100]
         if flag == 0:
             filename = rankingTxt + ".txt"
             newFile = open(filename, 'w', encoding='utf-8')
@@ -64,6 +66,10 @@ def generateranking(indexTxt, queriesTxt, docTermCountTxt, rankingTxt, system_na
             if index == 100:  # For getting only top 100
                 break
         docScore = {}
+    newFile.close()
+    filename = "../BM25_task3_TOP100_retrieved" + ".txt"
+    newFile = open(filename, 'w', encoding='utf-8')
+    newFile.write(str(retrieved_docs))
     newFile.close()
 
 
