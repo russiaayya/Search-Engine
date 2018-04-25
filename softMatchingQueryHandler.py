@@ -6,6 +6,7 @@ def getSoftMatchingQueryTerm(word,corpus):
         if len(w)==len(word) and w not in stop_Words:
             return w
 if __name__ == "__main__":
+    count=0
     file_contents = open("SEG_queries.txt", 'r', encoding='utf-8')
     queries = eval(file_contents.read())
     file_contents.close()
@@ -22,11 +23,14 @@ if __name__ == "__main__":
         for word in queries[qid]:
             if word in stop_Words:
                 continue
-            print("Original word:",word)
+            #print("Original word:",word)
             correctWord = ""
             if word not in corpus:
                 correctWord=getSoftMatchingQueryTerm(word,corpus)
-            if correctWord=="":
+            if correctWord=="" or correctWord is None:
                 correctWord=word
-            print("Corrected word:",correctWord)
-            
+            #print("Corrected word:",correctWord)
+            if correctWord not in corpus:
+                count+=1
+                #print("not corrected for ",correctWord)
+    print(count)
