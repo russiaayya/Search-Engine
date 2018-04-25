@@ -30,11 +30,15 @@ def generateranking(indexTxt, queriesTxt, docTermCountTxt, rankingTxt, system_na
         for word in q:
             if word in unigrams.keys():
                 ni = len(unigrams[word])  # no. of documents having that word
-                for docID in unigrams[word]:
-                    fi = unigrams[word][docID]  # term frequency in that document
+                for docID in documentLen.keys():
+                    if docID in unigrams[word]:
+                        fi = unigrams[word][docID]  # term frequency in that document
+                    else:
+                        fi = 0
                     dl = documentLen[docID]  # length of the document
                     tf = float(fi) / float(dl)
-                    idf = math.log(float(N) / float(ni))
+                    # idf with smoothing
+                    idf = 1 + (math.log(float(N) / float(ni + 1)))
                     score = tf * idf
                     if docID not in docScore:
                         docScore[docID] = score
@@ -62,16 +66,18 @@ def generateranking(indexTxt, queriesTxt, docTermCountTxt, rankingTxt, system_na
                 break
         docScore = {}
     newFile.close()
-    filename = "../tfidf_task3_TOP100_retrieved"+".txt"
-    newFile = open(filename, 'w', encoding='utf-8')
-    newFile.write(str(retrieved_docs))
-    newFile.close()
+
+    #needed only for evaluation report
+    # filename = "../tfidf_task3_TOP100_retrieved"+".txt"
+    # newFile = open(filename, 'w', encoding='utf-8')
+    # newFile.write(str(retrieved_docs))
+    # newFile.close()
 
 
 if __name__ == "__main__":
     # stopping
-    generateranking(r'Invereted_Indexes\unigram_index_stopping.txt', 'queries.txt', 'doc-termCount_stopped.txt',
-                    'Ranked_docs\Tidf-stopping-ranking', 'tf-idfStopping')
+    generateranking(r'Invereted_Indexes/unigram_index_stopping.txt', 'queries.txt', 'doc-termCount_stopped.txt',
+                    'Ranked_docs/Tidf-stopping-ranking', 'tf-idfStopping')
     # Stemmed
-    generateranking(r'Invereted_Indexes\unigram_index_stemmed.txt', 'queries_stemmed.txt', 'doc-termCount_stemmed.txt',
-                    'Ranked_docs\Tidf-stemmed-ranking', 'tf-idfStemmed')
+    generateranking(r'Invereted_Indexes/unigram_index_stemmed.txt', 'queries_stemmed.txt', 'doc-termCount_stemmed.txt',
+                    'Ranked_docs/Tidf-stemmed-ranking', 'tf-idfStemmed')
