@@ -15,6 +15,7 @@ def generateranking(enrichmentFlag):
     unigrams = eval(file_contents.read())
     if enrichmentFlag:
         file_contents = open("enrichedQueries.txt", 'r', encoding='utf-8')
+        #file_contents = open("enrichedQueries-top3.txt", 'r', encoding='utf-8')
         queries = eval(file_contents.read())
     else:
         file_contents = open("queries.txt", 'r', encoding='utf-8')
@@ -50,7 +51,7 @@ def generateranking(enrichmentFlag):
                             docScore[docID]+=score
             revSortedDocScore = sorted(docScore, key=docScore.get, reverse=True)# sorting in descending order
             retrieved_docs[qid]=revSortedDocScore[:100]
-            if not queryEnrichment:
+            if queryEnrichment:
                 for index,token in enumerate(revSortedDocScore):
                     index+=1
                     if qid not in prfqueries:
@@ -86,8 +87,9 @@ def generateranking(enrichmentFlag):
                     break
             docScore={}
     newFile.close()
-    if not queryEnrichment:
+    if queryEnrichment:
         filenamePRF = "bm25_Ranking_PRF" + ".txt"
+        #filenamePRF = "bm25_Ranking_PRF_top3" + ".txt"
         newFilePRF = open(filenamePRF, 'w', encoding='utf-8')
         newFilePRF.write(str(prfqueries))
         newFilePRF.close()

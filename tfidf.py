@@ -5,7 +5,6 @@ import io
 
 
 def tfidf_ranking():
-
     N=3204  #total no. of docs
     #Initialization
     ni = 0
@@ -17,9 +16,6 @@ def tfidf_ranking():
     queries = eval(file_contents.read())
     file_contents = open("doc-termCount.txt", 'r', encoding='utf-8')
     documentLen = eval(file_contents.read())
-    totalCount=0
-    for value in documentLen.values():
-        totalCount+=value
     flag=0
     retrieved_docs = {}
     for qid,q in queries.items():
@@ -29,14 +25,19 @@ def tfidf_ranking():
                     qfi[word]=1
                 else:
                     qfi[word]+=1
+
             for word in q:
                 if word in unigrams.keys():
                     ni = len(unigrams[word])  # no. of documents having that word
-                    for docID in unigrams[word]:
-                        fi=unigrams[word][docID]  # term frequency in that document
+                    for docID in documentLen.keys():
+                        if docID in unigrams[word]:
+                            fi = unigrams[word][docID] # term frequency in that document
+                        else:
+                            fi=0
                         dl=documentLen[docID]   #length of the document
                         tf = float(fi)/float(dl)
-                        idf = math.log(float(N)/float(ni))
+                        # idf with smoothing
+                        idf = 1 + (math.log(float(N) / float(ni+1)))
                         score = tf * idf
                         if docID not in docScore:
                             docScore[docID]=score
