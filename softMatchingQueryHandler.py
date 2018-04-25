@@ -19,6 +19,7 @@ def getFrequency(w,unigrams):
 
 if __name__ == "__main__":
     count=0
+    correctedQuery={}
     file_contents = open("SEG_queries.txt", 'r', encoding='utf-8')
     queries = eval(file_contents.read())
     file_contents.close()
@@ -32,20 +33,34 @@ if __name__ == "__main__":
     for term in unigrams:
         corpus.append(term)
     for qid in queries.keys():
+        #print("Erroneous Queries",queries[qid])
+        updatedQList=[]
         for word in queries[qid]:
             if word in stop_Words:
+                updatedQList.append(word)
                 continue
             #print("Original word:",word)
             correctWord = ""
             if word not in corpus:
                 correctWord=getSoftMatchingQueryTerm(word,corpus,unigrams)
+            else:
+                updatedQList.append(word)
             if correctWord=="" or correctWord is None:
                 correctWord=word
+            else:
+                updatedQList.append(correctWord)
             #print("Corrected word:",correctWord)
             if correctWord not in corpus:
                 count+=1
                 #print("not corrected for ",correctWord)
                 if spell(correctWord) in corpus:
                     count-=1
-                    print("Autocorrected word is",(correctWord,spell(correctWord)))
-    print(count)
+                    updatedQList.append(spell(correctWord))
+                    #print("Autocorrected word is",(correctWord,spell(correctWord)))
+                else:
+                    updatedQList.append(correctWord)
+        correctedQuery[qid]=updatedQList
+    filename = "softMatchingQuery.txt"
+    newFile = open(filename, 'w', encoding='utf-8')
+    newFile.write(str(correctedQuery))
+    newFile.close()
