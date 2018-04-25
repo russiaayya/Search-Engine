@@ -67,7 +67,7 @@ def generateranking(indexTxt, queriesTxt, docTermCountTxt, rankingTxt, system_na
                 break
         docScore = {}
     newFile.close()
-    filename = "BM25_task3_TOP100_retrieved" + ".txt"
+    filename = "../BM25_task3_TOP100_retrieved" + ".txt"
     newFile = open(filename, 'w', encoding='utf-8')
     newFile.write(str(retrieved_docs))
     newFile.close()
