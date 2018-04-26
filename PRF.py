@@ -4,8 +4,9 @@ from  bm25 import *
 
 
 tokenized_dir = "tokenized_Files"
-# do required stopping to remove high frequent stop words
 
+
+# numExpandedQueryTerms = number of high frequency terms taken from each k documents
 
 def pseudoRelevance(queryId, numExpandedQueryTerms, queries,expPseudoRel_queries,k):
     kExpandedQueryTerms = []
