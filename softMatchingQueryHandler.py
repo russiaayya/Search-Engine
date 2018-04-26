@@ -6,10 +6,10 @@ def getSoftMatchingQueryTerm(index,word,query,corpus,unigrams,bigrams):
     maxFreq = 0
     for w in listOfCorrections:
         corelation=getCorelation(index,w,query,bigrams)
-        if corelation>0:
+        if corelation>0:#if co-occurence of the word exists
             return w
         freq=getFrequency(w,unigrams)
-        if freq>maxFreq and w not in stop_Words and abs(len(w)-len(word))<=1:
+        if freq>maxFreq and w not in stop_Words and abs(len(w)-len(word))<=1:#Frequency of that word in the corpus is checked.Best match is considered
             maxFreq=freq
             bestMatch=w
     return bestMatch
@@ -17,15 +17,15 @@ def getSoftMatchingQueryTerm(index,word,query,corpus,unigrams,bigrams):
 def getCorelation(index,w,query,bigrams):
     value = 0
     if index>0:
-        bigram_word=query[index-1]+" "+w
+        bigram_word=query[index-1]+" "+w#Previous word and this word's proximity count in the corpus is considered.
     else:
         return 0
-    if bigram_word in bigrams:
+    if bigram_word in bigrams:#bigrams are considered for corelation between the previous word and the suggested word
         listOfDocs=bigrams[bigram_word]
         for doc in listOfDocs:
             value+=listOfDocs[doc]
     return value
-def getFrequency(w,unigrams):
+def getFrequency(w,unigrams):# number of times the suggested corrected word in present in the corpus
     freq=0
     listOfDocs=unigrams[w]
     for doc in listOfDocs.keys():
@@ -35,7 +35,7 @@ def getFrequency(w,unigrams):
 if __name__ == "__main__":
     count=0
     correctedQuery={}
-    file_contents = open("SEG_queries.txt", 'r', encoding='utf-8')
+    file_contents = open("SEG_queries.txt", 'r', encoding='utf-8')#Erroneous queries are taken as the input
     queries = eval(file_contents.read())
     file_contents.close()
     file_contents = open("common_words.txt", 'r', encoding='utf-8')
@@ -51,35 +51,29 @@ if __name__ == "__main__":
     for term in unigrams:
         corpus.append(term)
     for qid in queries.keys():
-        #print("Erroneous Queries",queries[qid])
         updatedQList=[]
         for index,word in enumerate(queries[qid]):
-            if word in stop_Words:
+            if word in stop_Words:#skipping the stopping words
                 updatedQList.append(word)
                 continue
-            #print("Original word:",word)
             correctWord = ""
-            if word not in corpus:
+            if word not in corpus:#We are finding the best match only if it is not found in the corpus
                 correctWord=getSoftMatchingQueryTerm(index,word,queries[qid],corpus,unigrams,bigrams)
             else:
                 updatedQList.append(word)
                 continue
-            if correctWord=="" or correctWord is None:
+            if correctWord=="" or correctWord is None:#if no corrrection is found in corelation and frequency,
+                # we are taking the original wrong word and trying to correct it with the help of autocorrect.
                 correctWord=word
             else:
                 updatedQList.append(correctWord)
-            #print("Corrected word:",correctWord)
             if correctWord not in corpus:
-                count+=1
-                # print("not corrected for ",correctWord)
-                if spell(correctWord) in corpus:
+                if spell(correctWord) in corpus:#autocorrect is used as the last step if no decent match is found.
                     count-=1
                     updatedQList.append(spell(correctWord))
-                    #print("Autocorrected word is",(correctWord,spell(correctWord)))
                 else:
                     updatedQList.append(correctWord)
         correctedQuery[qid]=updatedQList
-    print(count)
     filename = "softMatchingQuery.txt"
     newFile = open(filename, 'w', encoding='utf-8')
     newFile.write(str(correctedQuery))

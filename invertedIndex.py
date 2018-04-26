@@ -13,9 +13,9 @@ def generateIndex(fullPath,choice):
         file_contents = open(filename, 'r', encoding='utf-8')
         tokens = eval(file_contents.read())
         file=file.replace(".txt","")
-        if choice == "1":
+        if choice == "1":#unigram
             ngrams = tokens
-        if choice == "2":
+        if choice == "2":#bigram
             ngrams = []
             bigrams = list(nltk.bigrams(tokens))
             for b in bigrams:
@@ -34,7 +34,7 @@ def generateIndex(fullPath,choice):
         totalTermsInDoc[file] = totalCount
         totalCount=0
     if choice=="1":
-        filename = "doc-termCount" + ".txt"
+        filename = "doc-termCount" + ".txt"#Saves the document length for each document
         newFile = open(filename, 'w', encoding='utf-8')
         newFile.write(str(totalTermsInDoc))
         newFile.close()

@@ -1,11 +1,9 @@
-import sys
-import collections
 from  bm25 import *
 
 
 tokenized_dir = "tokenized_Files"
-# do required stopping to remove high frequent stop words
 
+# numExpandedQueryTerms = number of high frequency terms taken from each k documents
 
 def pseudoRelevance(queryId, numExpandedQueryTerms, queries,expPseudoRel_queries,k):
     kExpandedQueryTerms = []
@@ -24,16 +22,12 @@ def pseudoRelevance(queryId, numExpandedQueryTerms, queries,expPseudoRel_queries
         if num >= numExpandedQueryTerms:
             break
 
-    # print ("queryTerms: ",queryTerms)
-    # print("expanded terms",kExpandedQueryTerms)
-    # print("expanded terms count",len(kExpandedQueryTerms))
     completeRelevantList=list(queryTerms+kExpandedQueryTerms)
     if queryId not in expPseudoRel_queries:
         expPseudoRel_queries[queryId]=completeRelevantList
     else:
         expPseudoRel_queries[queryId].append(completeRelevantList)
     return expPseudoRel_queries
-
 
 
 
@@ -76,7 +70,6 @@ if __name__ == "__main__":
     queries = eval(content.read())
     numQuery = len(queries.keys())
     expPseudoRel_queries = {}
-    # PRFdict = pseudoRelevance('1',25, queries, expPseudoRel_queries,5)
     for qId in queries.keys():
         PRFdict=pseudoRelevance(qId, 5,queries,expPseudoRel_queries,5)
     filename = "enrichedQueries" + ".txt"
