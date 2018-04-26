@@ -9,8 +9,10 @@ def generateranking(enrichmentFlag):
     R=0.0
     #Initialization
     ni = 0
+    # dictionary to hold the computed document score
     docScore={}
     score=0
+    # load the inverted index
     file_contents = open("unigram_index.txt", 'r', encoding='utf-8')
     unigrams = eval(file_contents.read())
     if enrichmentFlag:
