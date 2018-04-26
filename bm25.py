@@ -93,7 +93,7 @@ def generateranking(enrichmentFlag):
         newFilePRF = open(filenamePRF, 'w', encoding='utf-8')
         newFilePRF.write(str(prfqueries))
         newFilePRF.close()
-    filename = "bm25_Ranking_TOP100_retrieved" + ".txt"
+    filename = "bm25_Ranking_TOP100_retrieved_PRF" + ".txt"
     newFile = open(filename, 'w', encoding='utf-8')
     newFile.write(str(retrieved_docs))
     newFile.close()
@@ -102,5 +102,5 @@ def generateranking(enrichmentFlag):
 if __name__ == "__main__":
     queryEnrichment=True
     generateranking(queryEnrichment)
-    queryEnrichment=False
-    generateranking(queryEnrichment)
+    # queryEnrichment=False
+    # generateranking(queryEnrichment)
