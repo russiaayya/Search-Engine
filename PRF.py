@@ -78,8 +78,8 @@ if __name__ == "__main__":
     expPseudoRel_queries = {}
     # PRFdict = pseudoRelevance('1',25, queries, expPseudoRel_queries,5)
     for qId in queries.keys():
-        PRFdict=pseudoRelevance(qId, 5,queries,expPseudoRel_queries,3)
-    filename = "enrichedQueries-top3" + ".txt"
+        PRFdict=pseudoRelevance(qId, 5,queries,expPseudoRel_queries,5)
+    filename = "enrichedQueries" + ".txt"
     newFile = open(filename, 'w', encoding='utf-8')
     newFile.write(str(PRFdict))
     newFile.close()
