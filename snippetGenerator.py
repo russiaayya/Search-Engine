@@ -27,7 +27,7 @@ def generateSnippet():
             content=content.strip()
             contentLines=content.split(".")
             properContents=[]
-            for c in contentLines:
+            for c in contentLines:#to skip the non significant digits at the end
                 if not c=="":
                     properContents.append(c)
                 if " PM" in c:
@@ -41,7 +41,7 @@ def generateSnippet():
                     if w in queryWords:
                         squareFreq+=1
                 length=len(sentence)
-                score=(squareFreq*squareFreq)/length
+                score=(squareFreq*squareFreq)/length#Luhn's formula
                 significance[sentence]=score
             revSignificance = sorted(significance, key=significance.get, reverse=True)  # sorting in descending order
             revSignificance=revSignificance[:2]
@@ -50,7 +50,7 @@ def generateSnippet():
                 finalSnippet.append("...")
                 for word in relSentence.split():
                     if (word in queryWords) and (word not in stop_Words):
-                        word="<b>"+word+"</b>"
+                        word="<b>"+word+"</b>"#Making the query terms bolded.
                         finalSnippet.append(word)
                     else:
                         finalSnippet.append(word)

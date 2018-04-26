@@ -53,4 +53,4 @@ def generateTokens(dir):
 def rindex(mylist, myvalue):
     return len(mylist) - mylist[::-1].index(myvalue) - 1
 if __name__ == "__main__":
-    generateTokens("D://Search-Engine//rawDocuments")
+    generateTokens("D://Search-Engine//rawDocuments")#Path to the folder having the raw documents
